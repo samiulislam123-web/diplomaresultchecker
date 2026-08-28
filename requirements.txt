@@ -1,5 +1,8 @@
 fastapi
-uvicorn
+uvicorn[standard]
 jinja2
 pydantic
-sqlite3-to-mysql
+pydantic-settings
+sqlalchemy
+python-multipart
+pdfplumber

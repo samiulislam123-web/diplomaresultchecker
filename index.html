@@ -1,0 +1,7152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>BTEB Diploma CGPA Calculator & Booklist | Diploma CGPA Studio</title>
+<link rel="canonical" href="https://btebdiplomacgpa.netlify.app/">
+
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f8a95">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CGPA Studio">
+
+<meta name="description" content="Free BTEB Diploma CGPA Calculator plus semester-wise Booklist & Subject Code for Diploma in Engineering (Regulation 2022) — Computer Science, Civil, Electrical, Electronics, Mechanical, Power, Architecture, Automobile, Chemical, RAC, Telecommunication, Mechatronics — along with Agriculture, Fisheries, Livestock, Forestry, Textile and Marine CGPA calculation for Probidhan 2010, 2016 and 2022.">
+<meta name="keywords" content="BTEB CGPA Calculator, Diploma CGPA Calculator, BTEB Diploma CGPA, BTEB Booklist, BTEB Diploma Booklist, Diploma Course Structure, BTEB Subject Code, Diploma Book List Regulation 2022, Computer Science Technology Booklist, Civil Technology Booklist, Electrical Technology Booklist, Electronics Technology Booklist, Mechanical Technology Booklist, Power Technology Booklist, Architecture Technology Booklist, Automobile Technology Booklist, Chemical Technology Booklist, RAC Technology Booklist, Telecommunication Technology Booklist, Mechatronics Technology Booklist, Diploma in Engineering CGPA Calculator, Probidhan 2022 CGPA Calculator, Probidhan 2016 CGPA Calculator, Probidhan 2010 CGPA Calculator, Diploma Agriculture CGPA Calculator, Diploma Fisheries CGPA Calculator, Diploma Textile CGPA Calculator, BTEB Result, বিটিইবি সিজিপিএ ক্যালকুলেটর, ডিপ্লোমা সিজিপিএ ক্যালকুলেটর, বিটিইবি বুকলিস্ট, ডিপ্লোমা সাবজেক্ট কোড">
+<meta name="author" content="Samiul Islam Saron">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="google-site-verification" content="xdVnOc4CDCxo58vRNHJO83MO6b1IsWh6wxLg5l0lj80">
+
+<meta property="og:title" content="BTEB Diploma CGPA Calculator & Booklist | Diploma CGPA Studio">
+<meta property="og:description" content="Calculate your BTEB Diploma CGPA and browse semester-wise Booklist & Subject Code for every Engineering technology, plus Agriculture, Fisheries, Livestock, Forestry, Textile and Marine diploma programmes.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Diploma CGPA Studio">
+
+<meta name="theme-color" content="#0d9488">
+
+<style>
+
+:root{
+ --bg:#f4f8fb;
+ --panel:#ffffff;
+ --panel2:#eef4fa;
+ --text:#10233b;
+ --muted:#5b7086;
+ --primary:#0d9488;
+ --secondary:#2563eb;
+ --accent:#7c3aed;
+ --danger:#e11d48;
+ --primaryRGB:13,148,136;
+ --btnText:#ffffff;
+ --line:rgba(16,35,59,.10);
+ --shadow:0 24px 60px rgba(16,35,59,.10);
+}
+
+*{
+ box-sizing:border-box;
+}
+
+html{
+ scroll-behavior:smooth;
+}
+
+body{
+ margin:0;
+ font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+ color:var(--text);
+ background:
+ radial-gradient(circle at 10% 0%,rgba(37,99,235,.07),transparent 28%),
+ radial-gradient(circle at 90% 10%,rgba(124,58,237,.06),transparent 25%),
+ linear-gradient(160deg,#f8fafc,#eef3f9 55%,#f4f8fb);
+ min-height:100vh;
+}
+
+button,
+input,
+select{
+ font:inherit;
+}
+
+button{
+ cursor:pointer;
+}
+
+a{
+ color:var(--primary);
+}
+
+.wrap{
+ max-width:1180px;
+ margin:auto;
+ padding:22px;
+}
+
+.topbar{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:15px;
+ margin-bottom:26px;
+}
+
+.brand{
+ display:flex;
+ align-items:center;
+ gap:12px;
+ font-weight:900;
+ letter-spacing:.2px;
+}
+
+.logo{
+ width:48px;
+ height:48px;
+ border-radius:16px;
+ display:grid;
+ place-items:center;
+ font-size:25px;
+ background:linear-gradient(135deg,var(--primary),var(--secondary));
+ color:var(--btnText);
+ box-shadow:0 10px 30px rgba(var(--primaryRGB),.22);
+}
+
+.menu{
+ display:flex;
+ gap:8px;
+}
+
+.iconbtn,
+.ghost{
+ border:1px solid var(--line);
+ background:rgba(16,35,59,.04);
+ color:var(--text);
+ border-radius:13px;
+ padding:10px 13px;
+}
+
+.hero{
+ position:relative;
+ overflow:hidden;
+ border:1px solid var(--line);
+ border-radius:30px;
+ padding:42px;
+ background:linear-gradient(135deg,var(--panel),var(--panel2) 60%,var(--panel2));
+ box-shadow:var(--shadow);
+}
+
+.hero:after{
+ content:"";
+ position:absolute;
+ width:240px;
+ height:240px;
+ border-radius:50%;
+ right:-80px;
+ top:-90px;
+ background:rgba(var(--primaryRGB),.10);
+ filter:blur(4px);
+}
+
+.badge{
+ display:inline-flex;
+ gap:7px;
+ align-items:center;
+ border:1px solid rgba(var(--primaryRGB),.25);
+ background:rgba(var(--primaryRGB),.08);
+ color:var(--primary);
+ padding:8px 12px;
+ border-radius:999px;
+ font-size:12px;
+ font-weight:800;
+}
+
+h1{
+ font-size:clamp(34px,5vw,62px);
+ line-height:1.02;
+ margin:18px 0 12px;
+ max-width:800px;
+}
+
+.hero p{
+ color:var(--muted);
+ max-width:760px;
+ line-height:1.7;
+ margin:0;
+}
+
+.section{
+ margin-top:28px;
+}
+
+.section-title{
+ display:flex;
+ justify-content:space-between;
+ align-items:end;
+ gap:15px;
+ margin-bottom:15px;
+}
+
+.section-title h2{
+ margin:0;
+ font-size:24px;
+}
+
+.section-title span{
+ color:var(--muted);
+ font-size:13px;
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:14px;
+}
+
+.diploma{
+ border:1px solid var(--line);
+ background:var(--panel);
+ border-radius:22px;
+ padding:20px;
+ text-align:left;
+ color:var(--text);
+ transition:.22s;
+ min-height:142px;
+ position:relative;
+ overflow:hidden;
+ box-shadow:0 6px 18px rgba(16,35,59,.05);
+}
+
+.diploma:hover,
+.diploma.active{
+ transform:translateY(-4px);
+ border-color:rgba(var(--primaryRGB),.55);
+ box-shadow:0 18px 45px rgba(16,35,59,.10);
+}
+
+.diploma .emoji{
+ font-size:30px;
+}
+
+.diploma strong{
+ display:block;
+ margin-top:13px;
+ font-size:16px;
+}
+
+.diploma small{
+ display:block;
+ color:var(--muted);
+ margin-top:5px;
+}
+
+.diploma.active:before{
+ content:"✓";
+ position:absolute;
+ right:15px;
+ top:14px;
+ color:var(--primary);
+ font-weight:900;
+}
+
+.card{
+ border:1px solid var(--line);
+ background:var(--panel);
+ border-radius:26px;
+ box-shadow:var(--shadow);
+}
+
+.backbar{
+ display:flex;
+ align-items:center;
+ gap:12px;
+ padding:18px 20px 0;
+}
+
+.backbtn{
+ border:1px solid var(--line);
+ background:rgba(16,35,59,.04);
+ color:var(--text);
+ border-radius:12px;
+ padding:9px 14px;
+ font-weight:800;
+ font-size:13px;
+}
+
+.backbar .crumb{
+ color:var(--muted);
+ font-size:13px;
+}
+
+.controls{
+ display:grid;
+ grid-template-columns:1.2fr .8fr;
+ gap:16px;
+ padding:20px;
+}
+
+.field label{
+ display:block;
+ font-size:12px;
+ font-weight:800;
+ color:var(--muted);
+ margin-bottom:8px;
+}
+
+select,
+input{
+ width:100%;
+ border:1px solid var(--line);
+ background:var(--panel2);
+ color:var(--text);
+ border-radius:14px;
+ padding:13px 14px;
+ outline:none;
+}
+
+select:focus,
+input:focus{
+ border-color:rgba(var(--primaryRGB),.7);
+ box-shadow:0 0 0 3px rgba(var(--primaryRGB),.10);
+}
+
+.semesters{
+ padding:0 20px 20px;
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:12px;
+}
+
+.sem{
+ border:1px solid var(--line);
+ border-radius:18px;
+ padding:14px;
+ background:var(--panel2);
+}
+
+.semhead{
+ display:flex;
+ justify-content:space-between;
+ gap:8px;
+ margin-bottom:10px;
+ font-weight:800;
+ font-size:13px;
+}
+
+.weight{
+ color:var(--primary);
+ font-size:11px;
+}
+
+.actions{
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+ padding:0 20px 20px;
+}
+
+.primary{
+ border:0;
+ color:var(--btnText);
+ font-weight:900;
+ background:linear-gradient(135deg,var(--primary),var(--secondary));
+ padding:13px 20px;
+ border-radius:14px;
+}
+
+.secondary{
+ border:1px solid var(--line);
+ background:rgba(16,35,59,.03);
+ color:var(--text);
+ padding:13px 20px;
+ border-radius:14px;
+}
+
+.result{
+ display:none;
+ margin-top:18px;
+ padding:25px;
+ border-top:1px solid var(--line);
+ background:linear-gradient(
+  135deg,
+  rgba(var(--primaryRGB),.06),
+  rgba(37,99,235,.05)
+ );
+}
+
+.result.show{
+ display:block;
+}
+
+.resultgrid{
+ display:grid;
+ grid-template-columns:1.3fr .7fr;
+ gap:20px;
+ align-items:center;
+}
+
+.score{
+ font-size:clamp(52px,8vw,88px);
+ font-weight:1000;
+ line-height:1;
+ color:var(--primary);
+ margin:10px 0;
+}
+
+.status{
+ display:inline-block;
+ padding:8px 12px;
+ border-radius:999px;
+ background:rgba(var(--primaryRGB),.10);
+ color:var(--primary);
+ font-weight:900;
+}
+
+.mini{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:10px;
+}
+
+.mini div{
+ border:1px solid var(--line);
+ padding:15px;
+ border-radius:16px;
+ background:rgba(16,35,59,.02);
+}
+
+.mini b{
+ display:block;
+ font-size:20px;
+}
+
+.mini span{
+ font-size:11px;
+ color:var(--muted);
+}
+
+.progressbar{
+ margin-top:16px;
+ height:10px;
+ border-radius:999px;
+ background:rgba(16,35,59,.07);
+ overflow:hidden;
+ border:1px solid var(--line);
+}
+
+.progressbar i{
+ display:block;
+ height:100%;
+ background:linear-gradient(90deg,var(--primary),var(--secondary));
+ width:0%;
+ transition:.3s;
+}
+
+.note{
+ color:var(--muted);
+ font-size:12px;
+ line-height:1.6;
+ margin-top:15px;
+}
+
+.about{
+ margin-top:28px;
+ border:1px solid var(--line);
+ background:var(--panel);
+ border-radius:26px;
+ box-shadow:var(--shadow);
+ padding:28px;
+}
+
+.aboutwho{
+ display:flex;
+ gap:16px;
+ align-items:flex-start;
+ padding-bottom:22px;
+ border-bottom:1px solid var(--line);
+ margin-bottom:20px;
+}
+
+.avatarbadge{
+ flex:none;
+ width:52px;
+ height:52px;
+ border-radius:16px;
+ display:grid;
+ place-items:center;
+ font-weight:900;
+ font-size:20px;
+ background:linear-gradient(135deg,var(--primary),var(--secondary));
+ color:var(--btnText);
+}
+
+.aboutwho strong{
+ display:block;
+ font-size:16px;
+ margin-bottom:6px;
+}
+
+.aboutwho p{
+ margin:0;
+ color:var(--muted);
+ font-size:13.5px;
+ line-height:1.75;
+ max-width:700px;
+}
+
+.aboutgoals{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:16px;
+}
+
+.goalitem{
+ border:1px solid var(--line);
+ border-radius:16px;
+ padding:16px;
+ background:var(--panel2);
+}
+
+.goaltag{
+ display:inline-block;
+ font-size:11px;
+ font-weight:900;
+ letter-spacing:.5px;
+ text-transform:uppercase;
+ color:var(--primary);
+ margin-bottom:8px;
+}
+
+.goalitem p{
+ margin:0;
+ color:var(--muted);
+ font-size:13.5px;
+ line-height:1.7;
+}
+
+.enginfo{
+ margin-top:20px;
+}
+
+.enginfo .eihead{
+ padding:26px 24px 6px;
+}
+
+.enginfo .eyebrow{
+ color:var(--primary);
+ font-size:11px;
+ font-weight:900;
+ letter-spacing:1.5px;
+ text-transform:uppercase;
+}
+
+.enginfo .eihead h3{
+ margin:8px 0 6px;
+ font-size:21px;
+}
+
+.enginfo .eihead p{
+ margin:0;
+ color:var(--muted);
+ font-size:13px;
+ line-height:1.7;
+ max-width:640px;
+}
+
+.acc{
+ padding:6px 20px 22px;
+}
+
+.acc details{
+ border:1px solid var(--line);
+ border-radius:16px;
+ background:var(--panel2);
+ margin-top:10px;
+ overflow:hidden;
+}
+
+.acc summary{
+ list-style:none;
+ cursor:pointer;
+ padding:15px 18px;
+ font-weight:800;
+ font-size:14px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:10px;
+}
+
+.acc summary::-webkit-details-marker{
+ display:none;
+}
+
+.acc summary:after{
+ content:"+";
+ color:var(--primary);
+ font-size:19px;
+ font-weight:900;
+}
+
+.acc details[open] summary:after{
+ content:"–";
+}
+
+.accbody{
+ padding:0 18px 18px;
+ color:var(--muted);
+ font-size:13.5px;
+ line-height:1.75;
+}
+
+.accbody ul{
+ margin:6px 0;
+ padding-left:18px;
+}
+
+.accbody li{
+ margin:4px 0;
+}
+
+.wtable{
+ width:100%;
+ border-collapse:collapse;
+ margin-top:8px;
+ font-size:12.5px;
+}
+
+.wtable th,
+.wtable td{
+ padding:8px 6px;
+ text-align:center;
+ border-bottom:1px solid var(--line);
+}
+
+.wtable th{
+ color:var(--primary);
+ font-weight:800;
+ font-size:11px;
+ letter-spacing:.3px;
+ text-transform:uppercase;
+}
+
+.wtable td.sem{
+ color:var(--text);
+ font-weight:700;
+ text-align:left;
+}
+
+.wtable td.active,
+.wtable th.active{
+ background:rgba(var(--primaryRGB),.10);
+ border-radius:6px;
+}
+
+.wtable tr:last-child td{
+ border-bottom:0;
+ font-weight:800;
+ color:var(--text);
+}
+
+/* TECHNOLOGY INFORMATION */
+
+.techgrid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:12px;
+ padding:0 20px 22px;
+}
+
+.techcard{
+ border:1px solid var(--line);
+ background:var(--panel2);
+ border-radius:18px;
+ padding:16px;
+ text-align:left;
+ color:var(--text);
+ transition:.2s;
+}
+
+.techcard:hover{
+ transform:translateY(-3px);
+ border-color:rgba(var(--primaryRGB),.5);
+ box-shadow:0 14px 30px rgba(16,35,59,.08);
+}
+
+.techcard .temoji{
+ font-size:24px;
+}
+
+.techcard strong{
+ display:block;
+ margin-top:10px;
+ font-size:14px;
+}
+
+.techcard small{
+ display:block;
+ color:var(--muted);
+ margin-top:4px;
+ font-size:11px;
+}
+
+.semtabs{
+ display:flex;
+ flex-wrap:wrap;
+ gap:8px;
+ padding:0 20px 16px;
+}
+
+.semtab{
+ border:1px solid var(--line);
+ background:var(--panel2);
+ color:var(--text);
+ border-radius:12px;
+ padding:9px 14px;
+ font-size:12.5px;
+ font-weight:800;
+}
+
+.semtab.active{
+ background:linear-gradient(135deg,var(--primary),var(--secondary));
+ color:var(--btnText);
+ border-color:transparent;
+}
+
+.subjtable{
+ width:100%;
+ border-collapse:collapse;
+ margin:0 20px 22px;
+ width:calc(100% - 40px);
+ font-size:13.5px;
+}
+
+.subjtable th,
+.subjtable td{
+ padding:10px 12px;
+ text-align:left;
+ border-bottom:1px solid var(--line);
+}
+
+.subjtable th{
+ color:var(--primary);
+ font-size:11px;
+ letter-spacing:.3px;
+ text-transform:uppercase;
+ font-weight:800;
+}
+
+.subjtable td.code{
+ color:var(--muted);
+ font-weight:700;
+ white-space:nowrap;
+ width:90px;
+}
+
+.subjtable-wrap{
+ overflow-x:auto;
+ -webkit-overflow-scrolling:touch;
+ margin:0 20px 22px;
+ border-radius:14px;
+ position:relative;
+}
+
+.subjtable-wrap .subjtable{
+ margin:0;
+ width:100%;
+ min-width:520px;
+}
+
+.subjtable-wrap::after{
+ content:"";
+ position:sticky;
+ top:0;
+ right:0;
+ float:right;
+ width:18px;
+ height:100%;
+ margin-left:-18px;
+ pointer-events:none;
+ background:linear-gradient(to right,transparent,var(--panel));
+ opacity:.9;
+}
+
+@media(max-width:480px){
+
+ .subjtable-wrap .subjtable{
+  font-size:12.5px;
+  min-width:460px;
+ }
+
+ .subjtable th,
+ .subjtable td{
+  padding:9px 10px;
+ }
+
+ .subjtable td.code{
+  width:76px;
+ }
+
+}
+
+.techsummary{
+ padding:0 20px 10px;
+ color:var(--muted);
+ font-size:12.5px;
+}
+
+/* PRIVACY */
+
+.page{
+ display:none;
+}
+
+.page.active{
+ display:block;
+}
+
+.privacy-card{
+ border:1px solid var(--line);
+ background:var(--panel);
+ border-radius:26px;
+ box-shadow:var(--shadow);
+ padding:34px;
+}
+
+.privacy-card h1{
+ font-size:30px;
+ margin-top:0;
+}
+
+.privacy-card h2{
+ font-size:17px;
+ margin:28px 0 8px;
+}
+
+.privacy-card p,
+.privacy-card li{
+ color:var(--muted);
+ font-size:14px;
+ line-height:1.75;
+}
+
+.privacy-card ul{
+ padding-left:20px;
+}
+
+.updated{
+ color:var(--muted);
+ font-size:12px;
+ margin-bottom:26px;
+}
+
+.privacy-note{
+ border:1px solid var(--line);
+ background:var(--panel2);
+ border-radius:14px;
+ padding:14px 16px;
+ margin-top:6px;
+ font-size:13px;
+ color:var(--muted);
+}
+
+.privacy-back{
+ margin-bottom:18px;
+}
+
+/* FOOTER */
+
+.footer{
+ text-align:center;
+ color:var(--muted);
+ padding:30px 0 12px;
+ font-size:12px;
+}
+
+.footer button{
+ border:0;
+ background:none;
+ color:var(--muted);
+ text-decoration:underline;
+ cursor:pointer;
+}
+
+.footer img{
+ margin-top:10px;
+ border-radius:6px;
+}
+
+/* TOAST */
+
+.toast{
+ position:fixed;
+ bottom:22px;
+ left:50%;
+ transform:translate(-50%,20px);
+ opacity:0;
+ pointer-events:none;
+ background:var(--text);
+ color:var(--panel);
+ border:1px solid var(--line);
+ padding:12px 16px;
+ border-radius:13px;
+ transition:.25s;
+ z-index:20;
+}
+
+.toast.show{
+ opacity:1;
+ transform:translate(-50%,0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+ .grid{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+ .semesters{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+ .mini{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+ .techgrid{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+}
+
+@media(max-width:650px){
+
+ .wrap{
+  padding:14px;
+ }
+
+ .hero{
+  padding:28px 20px;
+  border-radius:23px;
+ }
+
+ .topbar{
+  margin-bottom:15px;
+ }
+
+ .controls{
+  grid-template-columns:1fr;
+ }
+
+ .grid{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .semesters{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .resultgrid{
+  grid-template-columns:1fr;
+ }
+
+ .mini{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .diploma{
+  min-height:128px;
+  padding:16px;
+ }
+
+ .techgrid{
+  grid-template-columns:1fr;
+ }
+
+ .aboutwho{
+  flex-direction:column;
+ }
+
+ .aboutgoals{
+  grid-template-columns:1fr;
+ }
+
+ .privacy-card{
+  padding:24px 18px;
+ }
+
+}
+
+@media(max-width:420px){
+
+ .grid,
+ .semesters{
+  grid-template-columns:1fr;
+ }
+
+ .mini{
+  grid-template-columns:1fr;
+ }
+
+}
+
+/* PRINT */
+
+@media print{
+
+ body{
+  background:#fff;
+  color:#111;
+ }
+
+ .topbar,
+ .hero,
+ .section-title,
+ .grid,
+ .controls,
+ .actions,
+ .note,
+ .footer,
+ .backbar,
+ .about,
+ .enginfo{
+  display:none!important;
+ }
+
+ .card{
+  box-shadow:none;
+  border:0;
+ }
+
+ .result{
+  display:block!important;
+  background:#fff;
+  color:#111;
+  border:1px solid #ddd;
+ }
+
+ .result .score{
+  color:#111;
+ }
+
+}
+
+/* =========================================================
+   SUBJECT CODE FINDER
+========================================================= */
+
+.finderbox{
+ display:flex;
+ gap:10px;
+ margin-top:14px;
+}
+
+.finderbox input{
+ flex:1;
+}
+
+.findcount{
+ color:var(--muted);
+ font-size:12px;
+ font-weight:800;
+ margin-top:12px;
+}
+
+.findresults{
+ padding:14px 20px 8px;
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:12px;
+}
+
+.findcard{
+ border:1px solid var(--line);
+ background:var(--panel2);
+ border-radius:18px;
+ padding:14px 16px;
+}
+
+.findcode{
+ display:inline-block;
+ font-family:ui-monospace,Consolas,monospace;
+ font-weight:900;
+ font-size:12px;
+ color:var(--primary);
+ background:rgba(var(--primaryRGB),.10);
+ padding:3px 9px;
+ border-radius:8px;
+}
+
+.findname{
+ font-weight:800;
+ margin-top:8px;
+ font-size:14.5px;
+}
+
+.findmeta{
+ display:flex;
+ flex-wrap:wrap;
+ gap:8px;
+ margin-top:9px;
+}
+
+.findmeta span{
+ color:var(--muted);
+ font-size:11.5px;
+ font-weight:700;
+ background:rgba(16,35,59,.05);
+ padding:4px 9px;
+ border-radius:999px;
+}
+
+.findempty{
+ margin:6px 20px 20px;
+ padding:26px;
+ text-align:center;
+ color:var(--muted);
+ font-weight:700;
+ border:1px dashed var(--line);
+ border-radius:18px;
+ background:var(--panel2);
+}
+
+
+/* =========================================================
+   WHAT-IF GPA SIMULATOR
+========================================================= */
+
+.wiselected{
+ margin:0 20px 6px;
+ padding:12px 16px;
+ border-radius:16px;
+ background:rgba(var(--primaryRGB),.08);
+ color:var(--primary);
+ font-weight:800;
+ font-size:13px;
+}
+
+.wifocusbox{
+ margin:14px 20px 4px;
+ padding:20px;
+ border-radius:20px;
+ border:1px solid var(--line);
+ background:var(--panel2);
+}
+
+.wifocushead{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ font-weight:800;
+ font-size:13px;
+ color:var(--muted);
+ margin-bottom:10px;
+}
+
+.wifocushead b{
+ color:var(--primary);
+ font-size:20px;
+}
+
+.wirange{
+ width:100%;
+ accent-color:var(--primary);
+ height:6px;
+}
+
+.wi-fixed{
+ opacity:.75;
+}
+
+.wi-fixedval{
+ font-weight:900;
+ font-size:18px;
+ color:var(--text);
+}
+
+.wi-focus{
+ border-color:rgba(var(--primaryRGB),.55);
+ box-shadow:0 10px 26px rgba(16,35,59,.08);
+}
+
+.wiactions{
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+ padding:6px 20px 20px;
+}
+
+.wicompare{
+ margin:0 20px 20px;
+}
+
+.wiempty{
+ margin:0 20px 20px;
+ padding:26px;
+ text-align:center;
+ color:var(--muted);
+ font-weight:700;
+ border:1px dashed var(--line);
+ border-radius:18px;
+ background:var(--panel2);
+}
+
+@media(max-width:760px){
+
+ .findresults{
+  grid-template-columns:1fr;
+ }
+
+}
+
+
+/* =========================================================
+   EXAM COUNTDOWN (home page)
+========================================================= */
+
+.countdown{
+ margin:0 0 24px;
+ padding:20px;
+ border-radius:20px;
+ background:linear-gradient(135deg,rgba(var(--primaryRGB),.14),rgba(var(--primaryRGB),.05));
+ border:1px solid rgba(var(--primaryRGB),.30);
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:14px;
+ flex-wrap:wrap;
+}
+
+.countdown .cdleft{
+ display:flex;
+ align-items:center;
+ gap:14px;
+}
+
+.countdown .cdnum{
+ font-size:34px;
+ font-weight:900;
+ color:var(--primary);
+ line-height:1;
+}
+
+.countdown .cdlabel{
+ font-size:12px;
+ color:var(--muted);
+ font-weight:800;
+}
+
+.countdown .cdtext b{
+ display:block;
+ font-size:14.5px;
+}
+
+.countdown input[type="date"]{
+ padding:10px 12px;
+}
+
+.countdown .cdsetup{
+ display:flex;
+ gap:8px;
+ flex-wrap:wrap;
+ align-items:center;
+}
+
+@media(max-width:600px){
+
+ .countdown{
+  flex-direction:column;
+  align-items:stretch;
+  text-align:center;
+ }
+
+ .countdown .cdleft{
+  justify-content:center;
+ }
+
+}
+
+
+/* =========================================================
+   FEEDBACK / REPORT A MISTAKE
+========================================================= */
+
+.feedbackbox{
+ margin-top:14px;
+ padding:20px;
+ border-radius:20px;
+ border:1px solid var(--line);
+ background:var(--panel2);
+}
+
+.feedbackbox textarea{
+ width:100%;
+ min-height:96px;
+ border-radius:14px;
+ border:1px solid var(--line);
+ background:var(--panel);
+ color:var(--text);
+ padding:12px 14px;
+ font-family:inherit;
+ font-size:14px;
+ resize:vertical;
+}
+
+.feedbackbox input[type="text"],
+.feedbackbox input[type="email"]{
+ width:100%;
+ margin-bottom:10px;
+}
+
+.feedback-fab{
+ position:fixed;
+ right:18px;
+ bottom:18px;
+ z-index:40;
+ border-radius:999px;
+ padding:13px 18px;
+ background:var(--primary);
+ color:var(--btnText);
+ font-weight:800;
+ font-size:13px;
+ border:none;
+ box-shadow:0 14px 30px rgba(0,0,0,.22);
+ cursor:pointer;
+}
+
+@media print{
+
+ .feedback-fab,
+ .countdown{
+  display:none!important;
+ }
+
+}
+
+
+/* =========================================================
+   FAQ PAGE
+========================================================= */
+
+.faqitem{
+ border:1px solid var(--line);
+ background:var(--panel2);
+ border-radius:16px;
+ margin-bottom:12px;
+ overflow:hidden;
+}
+
+.faqitem summary{
+ padding:16px 18px;
+ font-weight:800;
+ font-size:14.5px;
+ cursor:pointer;
+ list-style:none;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:10px;
+}
+
+.faqitem summary::-webkit-details-marker{
+ display:none;
+}
+
+.faqitem summary::after{
+ content:"+";
+ font-size:20px;
+ color:var(--primary);
+ flex-shrink:0;
+}
+
+.faqitem[open] summary::after{
+ content:"–";
+}
+
+.faqitem .faqbody{
+ padding:0 18px 18px;
+ color:var(--muted);
+ font-size:13.5px;
+ line-height:1.7;
+}
+
+.faqgroup-title{
+ font-weight:900;
+ font-size:15px;
+ margin:24px 20px 12px;
+ color:var(--primary);
+}
+
+.faqgroup-title:first-of-type{
+ margin-top:6px;
+}
+
+
+/* =========================================================
+   SSC VOCATIONAL GPA CALCULATOR
+========================================================= */
+
+.vocgroup-title{
+ font-weight:900;
+ font-size:13px;
+ color:var(--primary);
+ margin:20px 20px 10px;
+}
+
+.vocgroup-title:first-of-type{
+ margin-top:4px;
+}
+
+.vocgrid{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:12px;
+ padding:0 20px;
+}
+
+.vocfield{
+ border:1px solid var(--line);
+ background:var(--panel2);
+ border-radius:14px;
+ padding:12px 14px;
+}
+
+.vocfield label{
+ display:block;
+ font-size:11.5px;
+ font-weight:800;
+ color:var(--muted);
+ margin-bottom:6px;
+}
+
+.vocfield input{
+ width:100%;
+ padding:8px 0;
+ border:none;
+ background:transparent;
+ font-size:15px;
+ font-weight:800;
+ color:var(--text);
+}
+
+.vocfield .vocgp{
+ font-size:11px;
+ color:var(--primary);
+ font-weight:800;
+ margin-top:4px;
+}
+
+@media(max-width:600px){
+
+ .vocgrid{
+  grid-template-columns:1fr;
+ }
+
+}
+
+
+/* =========================================================
+   RESULT SEARCH (coming soon until backend is deployed)
+========================================================= */
+
+.rsgrid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:14px;
+ padding:0 20px;
+}
+
+.rsgrid input,
+.rsgrid select{
+ width:100%;
+}
+
+@media(max-width:600px){
+
+ .rsgrid{
+  grid-template-columns:1fr;
+ }
+
+}
+
+.rscomingsoon{
+ margin:16px 20px 22px;
+ padding:26px;
+ text-align:center;
+ border:1px dashed var(--line);
+ border-radius:18px;
+ background:var(--panel2);
+ color:var(--muted);
+ font-weight:700;
+}
+
+.rsresult{
+ margin:18px 20px 0;
+ padding:18px;
+ border-radius:16px;
+ border:1px solid var(--line);
+ background:var(--panel2);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+ <div class="brand">
+
+  <div class="logo">🎓</div>
+
+  <div>
+   Diploma CGPA
+   <br>
+   <span style="color:var(--muted);font-size:11px;font-weight:600">
+    Universal Calculator & Booklist
+   </span>
+  </div>
+
+ </div>
+
+ <div class="menu">
+
+  <button
+   class="iconbtn"
+   onclick="openFinderPage()"
+   title="Subject Code Finder">
+   🔎
+  </button>
+
+  <button
+   class="iconbtn"
+   onclick="openWhatIfPage()"
+   title="What-If GPA Simulator">
+   🧮
+  </button>
+
+  <button
+   class="iconbtn"
+   onclick="toggleTheme()"
+   title="Toggle theme">
+   ◐
+  </button>
+
+ </div>
+
+</div>
+
+
+<!-- ================= HOME PAGE ================= -->
+
+<div id="homePage" class="page active">
+
+ <section class="hero">
+
+  <span class="badge">
+   ⚡ Fast • Private • No Login
+  </span>
+
+  <h1>
+   BTEB Diploma CGPA Calculator
+  </h1>
+
+  <p>
+   Calculate your Diploma CGPA easily with semester-wise GPA, and check
+   the official semester-wise Booklist & Subject Code for every
+   Diploma in Engineering technology under Regulation 2022.
+   Supports Diploma in Engineering, Agriculture, Fisheries, Livestock,
+   Forestry, Textile and Marine programmes.
+   Choose your Diploma and applicable Probidhan to start.
+  </p>
+
+ </section>
+
+
+ <section class="section">
+
+  <div
+   class="countdown"
+   id="countdownBox">
+  </div>
+
+
+  <div class="section-title">
+
+   <h2>
+    Choose Diploma
+   </h2>
+
+   <span id="selectedLabel">
+    Select one to continue
+   </span>
+
+  </div>
+
+  <div
+   class="grid"
+   id="diplomaGrid">
+  </div>
+
+
+  <div style="text-align:center;margin-top:18px">
+
+   <button
+    class="secondary"
+    onclick="showPage('faqPage')">
+    ❓ CGPA, Referred, Result নিয়ে প্রশ্ন? FAQ দেখুন
+   </button>
+
+   <button
+    class="secondary"
+    onclick="showPage('vocGpaPage')">
+    🔧 SSC Vocational GPA Calculator
+   </button>
+
+  </div>
+
+ </section>
+
+
+ <!-- ABOUT -->
+
+ <section class="about">
+
+  <div class="aboutwho">
+
+   <div class="avatarbadge">
+    S
+   </div>
+
+   <div>
+
+    <strong>
+     Samiul Islam Saron — Creator of this site
+    </strong>
+
+    <p>
+     I'm a polytechnic student myself, currently doing my diploma.
+     Working out my CGPA by hand after every semester can lead to
+     small mistakes, so I built Diploma CGPA Studio to make the
+     calculation simple, fast and easy to understand.
+    </p>
+
+   </div>
+
+  </div>
+
+
+  <div class="aboutgoals">
+
+   <div class="goalitem">
+
+    <span class="goaltag">
+     Our Goal
+    </span>
+
+    <p>
+     Give BTEB diploma students a simple place to calculate
+     semester-wise CGPA according to their applicable regulation,
+     without doing the weighted calculation manually.
+    </p>
+
+   </div>
+
+
+   <div class="goalitem">
+
+    <span class="goaltag">
+     Our Purpose
+    </span>
+
+    <p>
+     No result searching, no roll number lookup and no login.
+     Just a lightweight, free and easy-to-use Diploma CGPA calculator.
+    </p>
+
+   </div>
+
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= CALCULATOR PAGE ================= -->
+
+<div id="calculatorPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    onclick="goHome()">
+    ← Diploma তালিকায় ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="crumb">
+   </span>
+
+  </div>
+
+
+  <div class="controls">
+
+   <div class="field">
+
+    <label>
+     SELECTED DIPLOMA
+    </label>
+
+    <input
+     id="selectedDiploma"
+     readonly
+     value="Choose a Diploma">
+
+   </div>
+
+
+   <div class="field">
+
+    <label>
+     PROBIDHAN / REGULATION
+    </label>
+
+    <select id="regulation"></select>
+
+   </div>
+
+  </div>
+
+
+  <div
+   class="semesters"
+   id="semesterGrid">
+  </div>
+
+
+  <div class="actions">
+
+   <button
+    class="primary"
+    onclick="calculate()">
+    ✨ Calculate CGPA
+   </button>
+
+   <button
+    class="secondary"
+    onclick="resetCalc()">
+    ↺ Reset
+   </button>
+
+   <button
+    class="secondary"
+    onclick="window.print()">
+    🖨 Print
+   </button>
+
+   <button
+    class="secondary"
+    onclick="copyResult()">
+    📋 Copy Result
+   </button>
+
+   <button
+    class="secondary"
+    onclick="shareResult()">
+    📤 Share Result
+   </button>
+
+  </div>
+
+
+  <!-- RESULT -->
+
+  <div
+   class="result"
+   id="result">
+
+   <div class="resultgrid">
+
+    <div>
+
+     <div
+      style="color:var(--muted);font-size:12px;font-weight:800">
+      CGPA (এখন পর্যন্ত)
+     </div>
+
+     <div
+      class="score"
+      id="score">
+      0.00
+     </div>
+
+     <div
+      class="status"
+      id="status">
+      —
+     </div>
+
+    </div>
+
+
+    <div class="mini">
+
+     <div>
+      <b id="done">0/8</b>
+      <span>SEMESTERS ENTERED</span>
+     </div>
+
+     <div>
+      <b id="avg">0.00</b>
+      <span>AVERAGE GPA</span>
+     </div>
+
+     <div>
+      <b id="best">0.00</b>
+      <span>BEST GPA</span>
+     </div>
+
+     <div>
+      <b id="weightDone">0%</b>
+      <span>PROGRAM COMPLETED</span>
+     </div>
+
+    </div>
+
+   </div>
+
+
+   <div class="progressbar">
+    <i id="progressFill"></i>
+   </div>
+
+
+   <div
+    class="note"
+    id="methodNote">
+   </div>
+
+  </div>
+
+ </section>
+
+
+ <!-- ENGINEERING INFORMATION -->
+
+ <section
+  class="card enginfo"
+  id="enginfoPanel"
+  style="display:none">
+
+  <div class="eihead">
+
+   <span class="eyebrow">
+    Diploma in Engineering
+   </span>
+
+   <h3>
+    এই Probidhan-গুলো কীভাবে কাজ করে
+   </h3>
+
+   <p>
+    Diploma in Engineering-এর বিভিন্ন Probidhan-এ
+    semester-wise weight আলাদা হতে পারে।
+    নিচের টেবিলে এই calculator-এ ব্যবহৃত weight দেখা যাবে।
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 18px">
+
+   <button
+    class="primary"
+    onclick="showTechPage()">
+    📚 Technology-wise Subject Information দেখুন
+   </button>
+
+  </div>
+
+
+  <div class="acc">
+
+   <details open>
+
+    <summary>
+     তিনটা Probidhan-এর ওয়েটেজ পাশাপাশি
+    </summary>
+
+    <div class="accbody">
+
+     <table
+      class="wtable"
+      id="weightTable">
+     </table>
+
+     <div style="margin-top:10px;font-size:12px">
+
+      বর্তমানে selected Probidhan-এর column হালকা
+      করে highlight করা হয়েছে।
+
+     </div>
+
+    </div>
+
+   </details>
+
+
+   <details>
+
+    <summary>
+     তিন Probidhan-এর পার্থক্য
+    </summary>
+
+    <div class="accbody">
+
+     <ul>
+
+      <li>
+       <b>2010:</b>
+       শেষের দিকের semester-গুলোর weight তুলনামূলক বেশি।
+      </li>
+
+      <li>
+       <b>2016:</b>
+       semester-wise weight distribution ভিন্ন এবং
+       ৭ম semester-এর weight বেশি।
+      </li>
+
+      <li>
+       <b>2022:</b>
+       semester-wise weight distribution তুলনামূলক
+       balanced।
+      </li>
+
+     </ul>
+
+    </div>
+
+   </details>
+
+
+   <details>
+
+    <summary>
+     নিয়মিত CGPA হিসাব রাখলে সুবিধা
+    </summary>
+
+    <div class="accbody">
+
+     <ul>
+
+      <li>
+       প্রতি semester-এর পর নিজের academic progress
+       বুঝতে পারবেন।
+      </li>
+
+      <li>
+       পরবর্তী semester-এ কত GPA প্রয়োজন হতে পারে
+       তা পরিকল্পনা করা সহজ হবে।
+      </li>
+
+      <li>
+       উচ্চশিক্ষা বা চাকরির আবেদনের আগে নিজের CGPA
+       record সহজে যাচাই করতে পারবেন।
+      </li>
+
+     </ul>
+
+    </div>
+
+   </details>
+
+
+   <details>
+
+    <summary>
+     গুরুত্বপূর্ণ তথ্য
+    </summary>
+
+    <div class="accbody">
+
+     এই calculator কোনো BTEB server-এর সাথে connected নয়।
+     তাই semester GPA আপনাকেই manually input করতে হবে।
+     নিজের Probidhan অবশ্যই আপনার institution/BTEB record
+     থেকে যাচাই করে নিন।
+
+    </div>
+
+   </details>
+
+  </div>
+
+ </section>
+
+
+ <!-- AGRICULTURE INFORMATION -->
+
+ <section
+  class="card enginfo"
+  id="agriinfoPanel"
+  style="display:none">
+
+  <div class="eihead">
+
+   <span class="eyebrow">
+    Diploma in Agriculture
+   </span>
+
+   <h3>
+    Regulation 2022 Booklist
+   </h3>
+
+   <p>
+    Diploma in Agriculture (Probidhan 2022)-এর সবগুলো semester-এর
+    subject name, subject code, credit ও marks এখানে দেখতে পারবেন।
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 18px">
+
+   <button
+    class="primary"
+    onclick="showAgriBookPage()">
+    📚 Semester-wise Subject & Booklist দেখুন
+   </button>
+
+  </div>
+
+ </section>
+
+
+ <!-- LIVESTOCK INFORMATION -->
+
+ <section
+  class="card enginfo"
+  id="livestockinfoPanel"
+  style="display:none">
+
+  <div class="eihead">
+
+   <span class="eyebrow">
+    Diploma in Livestock
+   </span>
+
+   <h3>
+    Regulation 2022 Booklist
+   </h3>
+
+   <p>
+    Diploma in Livestock (Probidhan 2022)-এর সবগুলো semester-এর
+    subject name, subject code, credit ও marks এখানে দেখতে পারবেন।
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 18px">
+
+   <button
+    class="primary"
+    onclick="showLivestockBookPage()">
+    📚 Semester-wise Subject & Booklist দেখুন
+   </button>
+
+  </div>
+
+ </section>
+
+
+ <!-- FISHERIES INFORMATION -->
+
+ <section
+  class="card enginfo"
+  id="fisheriesinfoPanel"
+  style="display:none">
+
+  <div class="eihead">
+
+   <span class="eyebrow">
+    Diploma in Fisheries
+   </span>
+
+   <h3>
+    Regulation 2022 Booklist
+   </h3>
+
+   <p>
+    Diploma in Fisheries (Probidhan 2022)-এর সবগুলো semester-এর
+    subject name, subject code, credit ও marks এখানে দেখতে পারবেন।
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 18px">
+
+   <button
+    class="primary"
+    onclick="showFisheriesBookPage()">
+    📚 Semester-wise Subject & Booklist দেখুন
+   </button>
+
+  </div>
+
+ </section>
+
+
+ <!-- FORESTRY INFORMATION -->
+
+ <section
+  class="card enginfo"
+  id="forestryinfoPanel"
+  style="display:none">
+
+  <div class="eihead">
+
+   <span class="eyebrow">
+    Diploma in Forestry
+   </span>
+
+   <h3>
+    Regulation 2022 Booklist
+   </h3>
+
+   <p>
+    Diploma in Forestry (Probidhan 2022)-এর সবগুলো semester-এর
+    subject name, subject code, credit ও marks এখানে দেখতে পারবেন।
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 18px">
+
+   <button
+    class="primary"
+    onclick="showForestryBookPage()">
+    📚 Semester-wise Subject & Booklist দেখুন
+   </button>
+
+  </div>
+
+ </section>
+
+
+ <!-- MARINE INFORMATION -->
+
+ <section
+  class="card enginfo"
+  id="marineinfoPanel"
+  style="display:none">
+
+  <div class="eihead">
+
+   <span class="eyebrow">
+    Diploma in Marine Engineering
+   </span>
+
+   <h3>
+    Regulation 2022 Booklist
+   </h3>
+
+   <p>
+    Diploma in Marine Engineering (Probidhan 2022)-এর সবগুলো semester-এর
+    subject name, subject code, credit ও marks এখানে দেখতে পারবেন।
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 18px">
+
+   <button
+    class="primary"
+    onclick="showMarineBookPage()">
+    📚 Semester-wise Subject & Booklist দেখুন
+   </button>
+
+  </div>
+
+ </section>
+
+
+ <!-- TEXTILE INFORMATION -->
+
+ <section
+  class="card enginfo"
+  id="textileinfoPanel"
+  style="display:none">
+
+  <div class="eihead">
+
+   <span class="eyebrow">
+    Diploma in Textile Engineering
+   </span>
+
+   <h3>
+    Regulation 2022 Booklist
+   </h3>
+
+   <p>
+    Diploma in Textile Engineering (Probidhan 2022)-এর সবগুলো semester-এর
+    subject name, subject code, credit ও marks এখানে দেখতে পারবেন।
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 18px">
+
+   <button
+    class="primary"
+    onclick="showTextileBookPage()">
+    📚 Semester-wise Subject & Booklist দেখুন
+   </button>
+
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= AGRICULTURE BOOKLIST PAGE ================= -->
+
+<div id="agriBookPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    id="agriBackBtn"
+    onclick="showPage('calculatorPage')">
+    ← ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="agriCrumb">
+    Diploma in Agriculture / Booklist Regulation 2022
+   </span>
+
+  </div>
+
+
+  <div
+   class="techsummary"
+   id="agriSubjTitle">
+   Regulation 2022 অনুযায়ী Diploma in Agriculture-এর semester-wise
+   subject name, subject code, credit ও marks।
+  </div>
+
+  <div
+   class="semtabs"
+   id="agriSemTabs">
+  </div>
+
+  <table class="subjtable">
+
+   <thead>
+    <tr>
+     <th class="code">Code</th>
+     <th>Subject Name</th>
+     <th>Credit</th>
+     <th>Marks</th>
+    </tr>
+   </thead>
+
+   <tbody id="agriSubjTableBody">
+   </tbody>
+
+  </table>
+
+  <div class="techsummary" style="padding-top:0">
+   সূত্র: BTEB Diploma in Agriculture, Regulation 2022 course structure।
+   ভর্তির সময়ের official routine/gazette-এর সাথে মিলিয়ে নেওয়ার পরামর্শ
+   দেওয়া হচ্ছে, কারণ BTEB মাঝে মাঝে সংশোধনী প্রকাশ করে।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= LIVESTOCK INFORMATION (inside calculator page) ================= -->
+<!-- This panel is injected next to agriinfoPanel by placing it before calculatorPage closes -->
+
+
+<!-- ================= LIVESTOCK BOOKLIST PAGE ================= -->
+
+<div id="livestockBookPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    id="livestockBackBtn"
+    onclick="showPage('calculatorPage')">
+    ← ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="livestockCrumb">
+    Diploma in Livestock / Booklist Regulation 2022
+   </span>
+
+  </div>
+
+
+  <div
+   class="techsummary"
+   id="livestockSubjTitle">
+   Regulation 2022 অনুযায়ী Diploma in Livestock-এর semester-wise
+   subject name, subject code, credit ও marks।
+  </div>
+
+  <div
+   class="semtabs"
+   id="livestockSemTabs">
+  </div>
+
+  <table class="subjtable">
+
+   <thead>
+    <tr>
+     <th class="code">Code</th>
+     <th>Subject Name</th>
+     <th>Credit</th>
+     <th>Marks</th>
+    </tr>
+   </thead>
+
+   <tbody id="livestockSubjTableBody">
+   </tbody>
+
+  </table>
+
+  <div class="techsummary" style="padding-top:0">
+   সূত্র: BTEB Diploma in Livestock, Regulation 2022 course structure।
+   ভর্তির সময়ের official routine/gazette-এর সাথে মিলিয়ে নেওয়ার পরামর্শ
+   দেওয়া হচ্ছে, কারণ BTEB মাঝে মাঝে সংশোধনী প্রকাশ করে।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= FISHERIES BOOKLIST PAGE ================= -->
+
+<div id="fisheriesBookPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    id="fisheriesBackBtn"
+    onclick="showPage('calculatorPage')">
+    ← ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="fisheriesCrumb">
+    Diploma in Fisheries / Booklist Regulation 2022
+   </span>
+
+  </div>
+
+
+  <div
+   class="techsummary"
+   id="fisheriesSubjTitle">
+   Regulation 2022 অনুযায়ী Diploma in Fisheries-এর semester-wise
+   subject name, subject code, credit ও marks।
+  </div>
+
+  <div
+   class="semtabs"
+   id="fisheriesSemTabs">
+  </div>
+
+  <table class="subjtable">
+
+   <thead>
+    <tr>
+     <th class="code">Code</th>
+     <th>Subject Name</th>
+     <th>Credit</th>
+     <th>Marks</th>
+    </tr>
+   </thead>
+
+   <tbody id="fisheriesSubjTableBody">
+   </tbody>
+
+  </table>
+
+  <div class="techsummary" style="padding-top:0">
+   সূত্র: BTEB Diploma in Fisheries, Regulation 2022 course structure।
+   ভর্তির সময়ের official routine/gazette-এর সাথে মিলিয়ে নেওয়ার পরামর্শ
+   দেওয়া হচ্ছে, কারণ BTEB মাঝে মাঝে সংশোধনী প্রকাশ করে।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= FORESTRY BOOKLIST PAGE ================= -->
+
+<div id="forestryBookPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    id="forestryBackBtn"
+    onclick="showPage('calculatorPage')">
+    ← ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="forestryCrumb">
+    Diploma in Forestry / Booklist Regulation 2022
+   </span>
+
+  </div>
+
+
+  <div
+   class="techsummary"
+   id="forestrySubjTitle">
+   Regulation 2022 অনুযায়ী Diploma in Forestry-এর semester-wise
+   subject name, subject code, credit ও marks।
+  </div>
+
+  <div
+   class="semtabs"
+   id="forestrySemTabs">
+  </div>
+
+  <table class="subjtable">
+
+   <thead>
+    <tr>
+     <th class="code">Code</th>
+     <th>Subject Name</th>
+     <th>Credit</th>
+     <th>Marks</th>
+    </tr>
+   </thead>
+
+   <tbody id="forestrySubjTableBody">
+   </tbody>
+
+  </table>
+
+  <div class="techsummary" style="padding-top:0">
+   সূত্র: BTEB Diploma in Forestry, Regulation 2022 course structure।
+   ভর্তির সময়ের official routine/gazette-এর সাথে মিলিয়ে নেওয়ার পরামর্শ
+   দেওয়া হচ্ছে, কারণ BTEB মাঝে মাঝে সংশোধনী প্রকাশ করে।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= MARINE BOOKLIST PAGE ================= -->
+
+<div id="marineBookPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    id="marineBackBtn"
+    onclick="showPage('calculatorPage')">
+    ← ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="marineCrumb">
+    Diploma in Marine Engineering / Booklist Regulation 2022
+   </span>
+
+  </div>
+
+
+  <div
+   class="techsummary"
+   id="marineSubjTitle">
+   Regulation 2022 অনুযায়ী Diploma in Marine Engineering-এর semester-wise
+   subject name, subject code, credit ও marks।
+  </div>
+
+  <div
+   class="semtabs"
+   id="marineSemTabs">
+  </div>
+
+  <table class="subjtable">
+
+   <thead>
+    <tr>
+     <th class="code">Code</th>
+     <th>Subject Name</th>
+     <th>Credit</th>
+     <th>Marks</th>
+    </tr>
+   </thead>
+
+   <tbody id="marineSubjTableBody">
+   </tbody>
+
+  </table>
+
+  <div class="techsummary" style="padding-top:0">
+   সূত্র: BTEB Diploma in Marine Engineering, Regulation 2022 course structure।
+   ভর্তির সময়ের official routine/gazette-এর সাথে মিলিয়ে নেওয়ার পরামর্শ
+   দেওয়া হচ্ছে, কারণ BTEB মাঝে মাঝে সংশোধনী প্রকাশ করে।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= TEXTILE BOOKLIST PAGE ================= -->
+
+<div id="textileBookPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    id="textileBackBtn"
+    onclick="showPage('calculatorPage')">
+    ← ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="textileCrumb">
+    Diploma in Textile Engineering / Booklist Regulation 2022
+   </span>
+
+  </div>
+
+
+  <div
+   class="techsummary"
+   id="textileSubjTitle">
+   Regulation 2022 অনুযায়ী Diploma in Textile Engineering-এর semester-wise
+   subject name, subject code, credit ও marks।
+  </div>
+
+  <div
+   class="semtabs"
+   id="textileSemTabs">
+  </div>
+
+  <table class="subjtable">
+
+   <thead>
+    <tr>
+     <th class="code">Code</th>
+     <th>Subject Name</th>
+     <th>Credit</th>
+     <th>Marks</th>
+    </tr>
+   </thead>
+
+   <tbody id="textileSubjTableBody">
+   </tbody>
+
+  </table>
+
+  <div class="techsummary" style="padding-top:0">
+   সূত্র: BTEB Diploma in Textile Engineering, Regulation 2022 course structure।
+   ভর্তির সময়ের official routine/gazette-এর সাথে মিলিয়ে নেওয়ার পরামর্শ
+   দেওয়া হচ্ছে, কারণ BTEB মাঝে মাঝে সংশোধনী প্রকাশ করে।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= SUBJECT CODE FINDER PAGE ================= -->
+
+<div id="finderPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    onclick="goHome()">
+    ← ফিরে যান
+   </button>
+
+   <span class="crumb">
+    Subject Code Finder
+   </span>
+
+  </div>
+
+
+  <div style="padding:20px 20px 0">
+
+   <h2 style="margin:0 0 6px">
+    🔎 Subject Code Finder
+   </h2>
+
+   <p style="color:var(--muted);margin:0">
+    Subject Code অথবা Subject Name দিয়ে Diploma subject খুঁজুন
+   </p>
+
+
+   <div class="finderbox">
+
+    <input
+     id="finderInput"
+     type="text"
+     placeholder="🔍 Search Subject Code / Subject Name"
+     oninput="runSubjectSearch()">
+
+    <button
+     class="secondary"
+     onclick="clearFinder()">
+     Clear
+    </button>
+
+   </div>
+
+
+   <div
+    class="findcount"
+    id="finderCount">
+   </div>
+
+  </div>
+
+
+  <div
+   class="findresults"
+   id="finderResults">
+  </div>
+
+
+  <div
+   class="findempty"
+   id="finderEmpty"
+   style="display:none">
+   কোনো Subject পাওয়া যায়নি। Subject Code বা Subject Name আবার চেষ্টা করুন।
+  </div>
+
+
+  <div style="padding:0 20px 22px;color:var(--muted);font-size:12px">
+   💡 Tip: subject code (যেমন 28511) অথবা নামের অংশবিশেষ (যেমন Mathematics)
+   লিখে খুঁজুন — Engineering-এর সব Technology এবং Agriculture, Fisheries,
+   Livestock, Forestry, Textile, Marine — সব programme-এর subject একসাথে
+   খোঁজা হবে।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= WHAT-IF GPA SIMULATOR PAGE ================= -->
+
+<div id="whatifPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    onclick="goHome()">
+    ← ফিরে যান
+   </button>
+
+   <span class="crumb">
+    What-If GPA Simulator
+   </span>
+
+  </div>
+
+
+  <div style="padding:20px 20px 0">
+
+   <h2 style="margin:0 0 6px">
+    🧮 What-If GPA Simulator
+   </h2>
+
+   <p style="color:var(--muted);margin:0">
+    পরের Semester-এ কত GPA পেলে আপনার CGPA কত হবে তা দেখুন
+   </p>
+
+  </div>
+
+
+  <div
+   class="wiselected"
+   id="wiSelectedLabel">
+  </div>
+
+
+  <!-- shown when no diploma selected on calculator yet -->
+  <div
+   class="wiempty"
+   id="wiNeedSelect"
+   style="display:none">
+   এই ফিচার ব্যবহার করতে প্রথমে Home থেকে আপনার Diploma ও Probidhan
+   নির্বাচন করুন, সেখানে যত semester-এর GPA জানা আছে দিয়ে দিন।
+   <br><br>
+   <button
+    class="primary"
+    onclick="goHome()">
+    Diploma নির্বাচন করতে যান
+   </button>
+  </div>
+
+
+  <!-- shown when all 8 semesters already entered — nothing left to simulate -->
+  <div
+   class="wiempty"
+   id="wiNoBlank"
+   style="display:none">
+   আপনার সব ৮টি semester-এর GPA ইতিমধ্যে দেওয়া আছে, তাই simulate করার
+   মতো কোনো ফাঁকা semester নেই। কোনো semester-এর ঘর ফাঁকা রেখে আবার
+   আসুন what-if দেখতে।
+  </div>
+
+
+  <div id="wiMain" style="display:none">
+
+   <div class="wifocusbox">
+
+    <div class="wifocushead">
+
+     <span>
+      Select Semester
+     </span>
+
+     <select
+      id="wiSemesterSelect"
+      style="width:auto;padding:8px 12px">
+     </select>
+
+    </div>
+
+
+    <div class="wifocushead" style="margin-top:14px">
+
+     <span>
+      Next Semester GPA
+     </span>
+
+     <b id="wiFocusVal">
+      3.00
+     </b>
+
+    </div>
+
+    <input
+     class="wirange"
+     id="wiFocusRange"
+     type="range"
+     min="0"
+     max="4"
+     step="0.01"
+     value="3"
+     oninput="wiSetValue(wiFocusIndex,this.value)">
+
+   </div>
+
+
+   <div
+    class="result show"
+    style="margin:14px 20px 0;border-top:none">
+
+    <div class="resultgrid">
+
+     <div>
+
+      <div style="color:var(--muted);font-size:12px;font-weight:800">
+       PROJECTED CGPA
+      </div>
+
+      <div
+       class="score"
+       id="wiProjected">
+       0.00
+      </div>
+
+      <div
+       class="status"
+       id="wiStatus">
+       —
+      </div>
+
+     </div>
+
+
+     <div class="mini">
+
+      <div>
+       <b id="wiCurrent">0.00</b>
+       <span>CURRENT CGPA</span>
+      </div>
+
+     </div>
+
+    </div>
+
+
+    <div class="progressbar">
+     <i id="wiGaugeFill"></i>
+    </div>
+
+   </div>
+
+
+   <div
+    class="semesters"
+    id="wiSemGrid"
+    style="margin-top:6px">
+   </div>
+
+
+   <div class="wicompare">
+
+    <div
+     style="font-weight:800;font-size:13px;color:var(--muted);margin:16px 0 10px">
+     🎯 বিভিন্ন GPA হলে Projected CGPA
+    </div>
+
+    <table class="subjtable">
+
+     <thead>
+      <tr>
+       <th>Next Semester GPA</th>
+       <th>Projected CGPA</th>
+      </tr>
+     </thead>
+
+     <tbody id="wiCompareBody">
+     </tbody>
+
+    </table>
+
+   </div>
+
+
+   <div class="wiactions">
+
+    <button
+     class="secondary"
+     onclick="wiSaveLocal()">
+     💾 Local-এ Save করুন
+    </button>
+
+    <button
+     class="secondary"
+     onclick="wiLoadLocal()">
+     📂 Saved Data Load করুন
+    </button>
+
+    <button
+     class="secondary"
+     onclick="wiClearLocal()">
+     🗑️ Saved Data মুছুন
+    </button>
+
+   </div>
+
+
+   <div style="padding:0 20px 22px;color:var(--muted);font-size:12px">
+    হিসাব আপনার browser-এই হয়, কোনো data কোথাও পাঠানো হয় না। নির্বাচিত
+    Probidhan-এর official semester weight অনুযায়ী Projected CGPA
+    calculate করা হয়েছে।
+   </div>
+
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= FAQ PAGE ================= -->
+
+<div id="faqPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    onclick="goHome()">
+    ← ফিরে যান
+   </button>
+
+   <span class="crumb">
+    FAQ / সাধারণ প্রশ্নোত্তর
+   </span>
+
+  </div>
+
+
+  <div style="padding:20px 20px 4px">
+
+   <h2 style="margin:0 0 6px">
+    ❓ সাধারণ প্রশ্নোত্তর
+   </h2>
+
+   <p style="color:var(--muted);margin:0">
+    BTEB Diploma CGPA, Referred, Grading নিয়ে যা যা জানা দরকার
+   </p>
+
+  </div>
+
+
+  <div style="padding:0 20px 22px">
+
+   <div class="faqgroup-title">
+    CGPA ও Grading
+   </div>
+
+   <details class="faqitem">
+    <summary>CGPA কীভাবে হিসাব করা হয়?</summary>
+    <div class="faqbody">
+     BTEB প্রতিটা semester-কে নির্দিষ্ট একটা percentage weight দেয় (Regulation
+     ভেদে ভিন্ন — যেমন 2022 Regulation-এ Engineering-এর জন্য 5%, 5%, 10%, 10%,
+     20%, 20%, 20%, 10%)। প্রতিটা semester-এর GPA-কে তার নিজের weight দিয়ে
+     গুণ করে, সবগুলো যোগ করে ১০০ দিয়ে ভাগ করলে final CGPA পাওয়া যায়। এই
+     ওয়েবসাইটের Calculator সরাসরি এই official পদ্ধতিতেই হিসাব করে।
+    </div>
+   </details>
+
+   <details class="faqitem">
+    <summary>CGPA কত হলে ভালো ধরা হয়?</summary>
+    <div class="faqbody">
+     সাধারণত BTEB-এর grading অনুযায়ী: 3.75+ = Outstanding, 3.50–3.74 =
+     Excellent, 3.00–3.49 = Very Good, 2.75–2.99 = Good, 2.00–2.74 = Pass।
+     2.00-এর নিচে হলে Below Pass ধরা হয়। এই সাইটের Calculator result-এর
+     সাথেই এই grade automatically দেখিয়ে দেয়।
+    </div>
+   </details>
+
+   <details class="faqitem">
+    <summary>Average GPA আর Best GPA-এর মধ্যে পার্থক্য কী?</summary>
+    <div class="faqbody">
+     Average GPA হলো আপনার দেওয়া সব semester-এর GPA-এর সাধারণ গড়। Best GPA
+     হলো এখন পর্যন্ত সবচেয়ে বেশি যে GPA পেয়েছেন সেটা। এই দুটো CGPA থেকে
+     আলাদা — CGPA official weight অনুযায়ী হিসাব হয়, বাকি দুইটা শুধু তথ্য
+     হিসেবে দেখানো হয়।
+    </div>
+   </details>
+
+
+   <div class="faqgroup-title">
+    Referred ও Result
+   </div>
+
+   <details class="faqitem">
+    <summary>"Referred" মানে কী?</summary>
+    <div class="faqbody">
+     কোনো semester-এ ১টা থেকে ৩টা subject-এ fail করলে সেই semester-কে
+     "Referred" ধরা হয় — মানে বছর/semester হারাতে হয় না, পরবর্তী irregular
+     পরীক্ষায় শুধু ওই fail করা subject(গুলো) আবার দিতে হয়।
+    </div>
+   </details>
+
+   <details class="faqitem">
+    <summary>৪টা বা তার বেশি subject fail করলে কী হয়?</summary>
+    <div class="faqbody">
+     একই semester-এ ৪টা বা তার বেশি subject fail করলে সাধারণত পুরো semester-টা
+     আবার দিতে হয় (year loss / semester loss)। সঠিক নিয়ম নিজের institute বা
+     BTEB-এর official নোটিশে যাচাই করে নেওয়াই ভালো, কারণ regulation অনুযায়ী
+     সামান্য পার্থক্য হতে পারে।
+    </div>
+   </details>
+
+   <details class="faqitem">
+    <summary>BTEB result বছরে কবে প্রকাশ হয়?</summary>
+    <div class="faqbody">
+     সাধারণত বছরে দুইবার — বিজোড় (1st, 3rd, 5th, 7th) semester-এর result
+     এপ্রিল-মে মাসে, আর জোড় (2nd, 4th, 6th, 8th) semester-এর result
+     অক্টোবর-নভেম্বর মাসে প্রকাশিত হয়। তবে exact তারিখ বছরভেদে কিছুটা
+     পরিবর্তন হতে পারে, তাই BTEB-এর official ওয়েবসাইট/নোটিশ চেক করে নেওয়াই
+     ভালো।
+    </div>
+   </details>
+
+
+   <div class="faqgroup-title">
+    Probidhan ও Booklist
+   </div>
+
+   <details class="faqitem">
+    <summary>Probidhan (Regulation) কী, এটা কেন গুরুত্বপূর্ণ?</summary>
+    <div class="faqbody">
+     Probidhan হলো BTEB-এর নির্ধারিত সেই নিয়মকানুন ও semester-weight কাঠামো,
+     যেটা আপনার ভর্তির বছর অনুযায়ী নির্ধারিত হয় (যেমন 2022, 2016, বা 2010
+     Probidhan)। ভুল Probidhan দিয়ে হিসাব করলে CGPA ভুল আসবে, তাই Calculator
+     ব্যবহারের সময় নিজের সঠিক Probidhan অবশ্যই select করা জরুরি — এটা সাধারণত
+     ভর্তির সময়ের admission letter বা routine-এ উল্লেখ থাকে।
+    </div>
+   </details>
+
+   <details class="faqitem">
+    <summary>Booklist / Subject Information কোথায় পাবো?</summary>
+    <div class="faqbody">
+     Home page-এ নিজের Diploma programme select করার পর সেখানে
+     Semester-wise Subject & Booklist দেখার বাটন পাবেন — প্রতিটা semester-এর
+     subject code, নাম, credit ও মার্কস দেখা যাবে।
+    </div>
+   </details>
+
+
+   <div class="faqgroup-title">
+    SSC (Vocational)
+   </div>
+
+   <details class="faqitem">
+    <summary>SSC (Vocational)-এর CGPA কি একই নিয়মে হিসাব হয়?</summary>
+    <div class="faqbody">
+     না। SSC (Vocational) একদম আলাদা একটা স্তর ও গ্রেডিং সিস্টেম — এটা ০ থেকে
+     ৫.০০ স্কেলে (সাধারণ SSC/HSC-এর মতো A+, A, A- ইত্যাদি গ্রেড) হিসাব হয়,
+     আর Diploma-এর CGPA হয় ০ থেকে ৪.০০ স্কেলে, ভিন্ন semester-weight কাঠামোয়।
+     তাই এই ওয়েবসাইটের Diploma CGPA Calculator সরাসরি SSC (Vocational)-এর
+     জন্য প্রযোজ্য নয় — এর জন্য আলাদা
+     <a href="javascript:void(0)" onclick="showPage('vocGpaPage')">SSC Vocational GPA Calculator</a>
+     ব্যবহার করুন।
+    </div>
+   </details>
+
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= SSC VOCATIONAL GPA CALCULATOR PAGE ================= -->
+
+<div id="vocGpaPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    onclick="goHome()">
+    ← ফিরে যান
+   </button>
+
+   <span class="crumb">
+    SSC & Dakhil Vocational GPA Calculator
+   </span>
+
+  </div>
+
+
+  <div style="padding:20px 20px 4px">
+
+   <h2 style="margin:0 0 6px" id="vocPageTitle">
+    🔧 SSC Vocational GPA Calculator
+   </h2>
+
+   <p style="color:var(--muted);margin:0 0 8px" id="vocPageDesc">
+    ৭টা Compulsory subject + ট্রেডের ২টা Paper + ১টা Optional subject —
+    মোট ১০টা subject-এর মার্কস দিন, GPA (৫.০০ স্কেলে) বের করে দিচ্ছি।
+   </p>
+
+   <p style="color:var(--muted);margin:0;font-size:12px">
+    এটা Diploma CGPA থেকে সম্পূর্ণ আলাদা একটা হিসাব — SSC/Dakhil-এর মতো
+    ৫.০০ point scale ব্যবহার করে।
+   </p>
+
+  </div>
+
+
+  <div class="wimodes" style="margin-top:14px">
+
+   <button
+    class="wimodebtn active"
+    id="vocStreamSscBtn"
+    onclick="vocSwitchStream('ssc')">
+    SSC Vocational
+   </button>
+
+   <button
+    class="wimodebtn"
+    id="vocStreamDakhilBtn"
+    onclick="vocSwitchStream('dakhil')">
+    Dakhil Vocational
+   </button>
+
+  </div>
+
+
+  <div class="vocgroup-title" id="vocCompulsoryTitle">
+   ✅ Compulsory Subjects (৭টা)
+  </div>
+
+  <div class="vocgrid" id="vocCompulsoryGrid">
+  </div>
+
+
+  <div class="vocgroup-title">
+   🔧 আপনার ট্রেডের ২টা Paper
+  </div>
+
+  <div class="vocgrid">
+
+   <div class="vocfield">
+    <label>আপনার ট্রেড নির্বাচন করুন</label>
+    <select
+     id="vocTradeName"
+     onchange="updateVocTradeLabels()">
+     <option value="">-- ট্রেড বাছাই করুন --</option>
+    </select>
+   </div>
+
+   <div></div>
+
+   <div class="vocfield">
+    <label id="vocTrade1Label">Trade Paper 1 — মার্কস</label>
+    <input
+     id="vocTrade1"
+     type="number"
+     min="0"
+     max="100"
+     placeholder="0-100"
+     oninput="calcVocGpa()">
+    <div class="vocgp" id="vocTrade1gp"></div>
+   </div>
+
+   <div class="vocfield">
+    <label id="vocTrade2Label">Trade Paper 2 — মার্কস</label>
+    <input
+     id="vocTrade2"
+     type="number"
+     min="0"
+     max="100"
+     placeholder="0-100"
+     oninput="calcVocGpa()">
+    <div class="vocgp" id="vocTrade2gp"></div>
+   </div>
+
+  </div>
+
+
+  <div class="vocgroup-title">
+   ➕ Optional (4th) Subject
+  </div>
+
+  <div class="vocgrid">
+
+   <div class="vocfield">
+    <label>Optional Subject — মার্কস</label>
+    <input
+     id="vocOptional"
+     type="number"
+     min="0"
+     max="100"
+     placeholder="0-100"
+     oninput="calcVocGpa()">
+    <div class="vocgp" id="vocOptionalgp"></div>
+   </div>
+
+  </div>
+
+
+  <div
+   class="result show"
+   style="margin:20px 20px 0;border-top:none">
+
+   <div class="resultgrid">
+
+    <div>
+
+     <div style="color:var(--muted);font-size:12px;font-weight:800">
+      YOUR GPA
+     </div>
+
+     <div
+      class="score"
+      id="vocScore">
+      0.00
+     </div>
+
+     <div
+      class="status"
+      id="vocStatus">
+      —
+     </div>
+
+    </div>
+
+   </div>
+
+  </div>
+
+
+  <div style="padding:18px 20px 22px;color:var(--muted);font-size:12px">
+   কোনো subject-এ ৪০-এর কম মার্কস (F grade) পেলে সেই semester-এর GPA
+   automatically 0.00 হয়ে যায় — এটাই official BTEB নিয়ম। হিসাব আপনার
+   browser-এই হয়, কোনো তথ্য কোথাও পাঠানো হয় না।
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= RESULT SEARCH PAGE ================= -->
+
+<div id="resultSearchPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    onclick="goHome()">
+    ← ফিরে যান
+   </button>
+
+   <span class="crumb">
+    Result Search
+   </span>
+
+  </div>
+
+
+  <div style="padding:20px 20px 4px">
+
+   <h2 style="margin:0 0 6px">
+    🔎 Result Search
+   </h2>
+
+   <p style="color:var(--muted);margin:0">
+    Probidhan ও Roll Number দিয়ে semester GPA দেখুন
+   </p>
+
+  </div>
+
+
+  <div id="rsComingSoon" class="rscomingsoon">
+   🚧 এই ফিচারটা এখনো তৈরি হচ্ছে — খুব শীঘ্রই আসছে।
+  </div>
+
+
+  <div id="rsSearchArea" style="display:none">
+
+   <div class="rsgrid">
+
+    <select id="rsProbidhan">
+     <option value="2022">Probidhan 2022</option>
+     <option value="2016">Probidhan 2016</option>
+     <option value="2010">Probidhan 2010</option>
+    </select>
+
+    <input
+     id="rsRoll"
+     type="text"
+     inputmode="numeric"
+     placeholder="Roll Number">
+
+   </div>
+
+   <div style="padding:14px 20px 0">
+
+    <button
+     class="primary"
+     onclick="searchResult()">
+     Search Result
+    </button>
+
+   </div>
+
+   <div
+    id="rsMessage"
+    style="display:none;margin:14px 20px 0;padding:12px 16px;border-radius:12px;background:rgba(239,68,68,.12);color:#b91c1c;font-weight:700;font-size:13px">
+   </div>
+
+   <div id="rsResult" class="rsresult" style="display:none">
+   </div>
+
+   <div style="padding:20px;color:var(--muted);font-size:12px">
+    এটা BTEB-এর official ওয়েবসাইট না — একটা স্বতন্ত্র (independent) result search interface।
+   </div>
+
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= TECHNOLOGY INFORMATION PAGE ================= -->
+
+<div id="techPage" class="page">
+
+ <section class="section card">
+
+  <div class="backbar">
+
+   <button
+    class="backbtn"
+    id="techBackBtn"
+    onclick="techGoBack()">
+    ← ফিরে যান
+   </button>
+
+   <span
+    class="crumb"
+    id="techCrumb">
+    Diploma in Engineering / Technology Information
+   </span>
+
+  </div>
+
+
+  <!-- Technology chooser -->
+
+  <div id="techChooser">
+
+   <div class="techsummary">
+    Regulation 2022 অনুযায়ী আপনার Technology নির্বাচন করুন। প্রতিটি
+    Technology-এর জন্য semester-wise subject name ও official subject code
+    দেখানো হবে।
+   </div>
+
+   <div
+    class="techgrid"
+    id="techGrid">
+   </div>
+
+  </div>
+
+
+  <!-- Subject viewer -->
+
+  <div id="techSubjectView" style="display:none">
+
+   <div
+    class="techsummary"
+    id="techSubjTitle">
+   </div>
+
+   <div
+    class="semtabs"
+    id="semTabs">
+   </div>
+
+   <table class="subjtable">
+
+    <thead>
+     <tr>
+      <th class="code">Code</th>
+      <th>Subject Name</th>
+     </tr>
+    </thead>
+
+    <tbody id="subjTableBody">
+    </tbody>
+
+   </table>
+
+   <div class="techsummary" style="padding-top:0">
+    সূত্র: BTEB Diploma in Engineering, Regulation 2022 course structure।
+    ভর্তির সময়ের official routine/gazette-এর সাথে মিলিয়ে নেওয়ার পরামর্শ
+    দেওয়া হচ্ছে, কারণ BTEB মাঝে মাঝে সংশোধনী প্রকাশ করে।
+   </div>
+
+  </div>
+
+ </section>
+
+</div>
+
+
+<!-- ================= PRIVACY PAGE ================= -->
+
+<div id="privacyPage" class="page">
+
+ <section class="privacy-card">
+
+  <div class="privacy-back">
+
+   <button
+    class="backbtn"
+    onclick="goHome()">
+    ← Calculator-এ ফিরে যান
+   </button>
+
+  </div>
+
+
+  <h1>
+   Privacy Policy
+  </h1>
+
+  <div class="updated">
+   Last updated: August 2026
+  </div>
+
+
+  <p>
+   Diploma CGPA Studio একটি free online tool।
+   এই website-এর উদ্দেশ্য হলো BTEB diploma/polytechnic
+   students-দের semester GPA থেকে CGPA হিসাব করতে সাহায্য করা।
+  </p>
+
+
+  <h2>
+   1. Calculator Data
+  </h2>
+
+  <p>
+   আপনি যে semester GPA এই calculator-এ লিখবেন,
+   সেগুলো calculation করার জন্য আপনার browser-এর
+   ভিতরেই ব্যবহার করা হয়। এই standalone calculator
+   কোনো student result database-এ GPA পাঠায় না।
+  </p>
+
+
+  <h2>
+   2. No Login or Account
+  </h2>
+
+  <p>
+   এই calculator ব্যবহার করার জন্য কোনো account,
+   password, roll number বা login প্রয়োজন নেই।
+  </p>
+
+
+  <h2>
+   3. Visitor Counter
+  </h2>
+
+  <p>
+   Website-এর footer-এ visitor counter ব্যবহার করা হতে পারে।
+   এটি একটি third-party service-এর মাধ্যমে load হতে পারে।
+   Third-party service তাদের নিজস্ব technical information
+   collect করতে পারে।
+  </p>
+
+
+  <h2>
+   4. Advertising
+  </h2>
+
+  <p>
+   Website-এ ভবিষ্যতে Google AdSense বা অন্য advertising
+   network ব্যবহার করা হতে পারে। Advertising provider
+   cookies বা similar technologies ব্যবহার করতে পারে।
+  </p>
+
+
+  <div class="privacy-note">
+
+   Personalized advertising সম্পর্কিত settings পরিবর্তন করতে
+   Google-এর নিজস্ব advertising settings ব্যবহার করা যেতে পারে।
+
+  </div>
+
+
+  <h2>
+   5. Third-Party Websites
+  </h2>
+
+  <p>
+   Website থেকে BTEB বা অন্য কোনো external website-এ
+   link থাকলে সেই website-এর privacy policy আলাদা।
+   আমরা external website-এর privacy practices control করি না।
+  </p>
+
+
+  <h2>
+   6. Children's Privacy
+  </h2>
+
+  <p>
+   এই website diploma/polytechnic students-এর জন্য তৈরি।
+   আমরা ইচ্ছাকৃতভাবে কোনো শিশুর ব্যক্তিগত তথ্য সংগ্রহ করার
+   ব্যবস্থা রাখিনি।
+  </p>
+
+
+  <h2>
+   7. Changes to this Policy
+  </h2>
+
+  <p>
+   Website-এর features বা data handling system পরিবর্তন হলে
+   এই Privacy Policy update করা হতে পারে।
+  </p>
+
+
+  <h2>
+   8. Contact
+  </h2>
+
+  <p>
+   Privacy Policy সম্পর্কিত কোনো প্রশ্ন থাকলে website owner-এর
+   contact information ভবিষ্যতে এখানে যোগ করা যেতে পারে।
+  </p>
+
+ </section>
+
+</div>
+
+
+<!-- ================= FEEDBACK ================= -->
+
+<button
+ class="feedback-fab"
+ id="feedbackFab"
+ onclick="openFeedback()">
+ 💬 Feedback
+</button>
+
+<div
+ id="feedbackOverlay"
+ style="display:none;position:fixed;inset:0;background:rgba(6,15,25,.55);z-index:50;align-items:center;justify-content:center;padding:20px">
+
+ <div
+  class="card"
+  style="max-width:420px;width:100%;padding:0">
+
+  <div class="feedbackbox" style="margin:0;border:none;background:transparent">
+
+   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+
+    <h3 style="margin:0">
+     💬 Feedback / Report a Mistake
+    </h3>
+
+    <button
+     class="secondary"
+     onclick="closeFeedback()">
+     ✕
+    </button>
+
+   </div>
+
+   <p style="color:var(--muted);margin:0 0 14px;font-size:13px">
+    কোনো subject/credit ভুল চোখে পড়লে, বা কোনো suggestion থাকলে জানান।
+   </p>
+
+   <form
+    id="feedbackForm"
+    name="feedback"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="fbBotField"
+    onsubmit="return submitFeedback(event)">
+
+    <input type="hidden" name="form-name" value="feedback">
+
+    <div style="display:none">
+     <input name="fbBotField">
+    </div>
+
+    <input
+     id="fbName"
+     name="name"
+     type="text"
+     placeholder="আপনার নাম (ঐচ্ছিক)">
+
+    <input
+     id="fbEmail"
+     name="email"
+     type="email"
+     placeholder="ইমেইল (ঐচ্ছিক, reply দরকার হলে)">
+
+    <textarea
+     id="fbMessage"
+     name="message"
+     required
+     placeholder="আপনার মতামত বা কোন subject-এ ভুল আছে লিখুন..."></textarea>
+
+    <div style="margin-top:14px;display:flex;gap:10px">
+
+     <button
+      class="primary"
+      type="submit">
+      পাঠিয়ে দিন
+     </button>
+
+     <button
+      class="secondary"
+      type="button"
+      onclick="closeFeedback()">
+      বাতিল
+     </button>
+
+    </div>
+
+   </form>
+
+  </div>
+
+ </div>
+
+</div>
+
+
+<!-- ================= AD (Adsterra Native Banner) ================= -->
+
+<div class="section" style="margin:0 auto 10px;max-width:900px;padding:0 16px">
+
+ <script async data-cfasync="false" src="https://pl31036164.profitableratecpmnetwork.com/8faf925d5ce7816f79e79ef2e58d5594/invoke.js"></script>
+ <div id="container-8faf925d5ce7816f79e79ef2e58d5594"></div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<div class="footer">
+
+ Diploma CGPA Studio •
+ Built as a standalone calculator •
+ Calculation runs in your browser
+
+ <div style="margin-top:7px">
+
+  <button onclick="showPrivacy()">
+   Privacy Policy
+  </button>
+
+  <button onclick="showPage('faqPage')">
+   ❓ FAQ
+  </button>
+
+  <button onclick="showPage('resultSearchPage')">
+   🔎 Result Search
+  </button>
+
+  <button
+   id="installBtn"
+   onclick="triggerInstall()"
+   style="display:none">
+   📲 Install App
+  </button>
+
+ </div>
+
+
+ <div style="margin-top:10px">
+
+  <img
+   src="https://visitor-badge.laobi.icu/badge?page_id=samiul-islam-saron.diploma-cgpa-studio&left_text=Visitors"
+   alt="Visitor count"
+   style="border-radius:6px">
+
+ </div>
+
+</div>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div
+ class="toast"
+ id="toast">
+</div>
+
+
+<script>
+
+/* =========================================================
+   DIPLOMA DATA
+========================================================= */
+
+const DATA = {
+
+ engineering:{
+  name:"Diploma in Engineering",
+  icon:"🏗️",
+
+  regs:{
+
+   "2022":{
+    weights:[5,5,10,10,20,20,20,10],
+    exact:true
+   },
+
+   "2016":{
+    weights:[5,5,5,10,15,20,25,15],
+    exact:true
+   },
+
+   "2010":{
+    weights:[5,5,5,15,15,20,25,10],
+    exact:true
+   }
+
+  }
+ },
+
+
+ agriculture:{
+  name:"Diploma in Agriculture",
+  icon:"🌾",
+
+  regs:{
+   "2022":{
+    weights:null,
+    exact:false
+   }
+  }
+ },
+
+
+ fisheries:{
+  name:"Diploma in Fisheries",
+  icon:"🐟",
+
+  regs:{
+   "2022":{
+    weights:null,
+    exact:false
+   }
+  }
+ },
+
+
+ livestock:{
+  name:"Diploma in Livestock",
+  icon:"🐄",
+
+  regs:{
+   "2022":{
+    weights:null,
+    exact:false
+   }
+  }
+ },
+
+
+ forestry:{
+  name:"Diploma in Forestry",
+  icon:"🌲",
+
+  regs:{
+   "2022":{
+    weights:null,
+    exact:false
+   }
+  }
+ },
+
+
+ textile:{
+  name:"Diploma in Textile Engineering",
+  icon:"🧵",
+
+  regs:{
+   "2022":{
+    weights:null,
+    exact:false
+   }
+  }
+ },
+
+
+ marine:{
+  name:"Diploma in Marine Engineering",
+  icon:"⚓",
+
+  regs:{
+   "2016":{
+    weights:null,
+    exact:false
+   }
+  }
+ }
+
+};
+
+
+/* =========================================================
+   GLOBAL VARIABLES
+========================================================= */
+
+let selected="engineering";
+let suppressHistory=false;
+
+
+/* =========================================================
+   PAGE FUNCTIONS
+========================================================= */
+
+function showPage(id){
+
+ document.querySelectorAll(".page").forEach(page=>{
+  page.classList.remove("active");
+ });
+
+ document.getElementById(id).classList.add("active");
+
+ window.scrollTo({
+  top:0,
+  behavior:"smooth"
+ });
+
+}
+
+
+function showPrivacy(){
+
+ history.pushState(
+  {view:"privacy"},
+  "",
+  "#privacy"
+ );
+
+ showPage("privacyPage");
+
+}
+
+
+function goHome(pushState=true){
+
+ showPage("homePage");
+
+ if(pushState){
+
+  history.pushState(
+   {view:"home"},
+   "",
+   "#"
+  );
+
+ }
+
+}
+
+
+/* =========================================================
+   DIPLOMA RENDER
+========================================================= */
+
+function renderDiplomas(){
+
+ const grid=document.getElementById("diplomaGrid");
+
+ grid.innerHTML=Object.entries(DATA).map(([key,d])=>`
+
+  <button
+   class="diploma ${key===selected?'active':''}"
+   onclick="selectDiploma('${key}')">
+
+   <div class="emoji">
+    ${d.icon}
+   </div>
+
+   <strong>
+    ${d.name}
+   </strong>
+
+   <small>
+    ${Object.keys(d.regs).length}
+    regulation option${Object.keys(d.regs).length>1?'s':''}
+   </small>
+
+  </button>
+
+ `).join("");
+
+}
+
+
+/* =========================================================
+   WEIGHT
+========================================================= */
+
+function getWeights(cfg){
+
+ if(cfg.weights){
+  return cfg.weights;
+ }
+
+ return Array(8).fill(12.5);
+
+}
+
+
+/* =========================================================
+   SELECT DIPLOMA
+========================================================= */
+
+function selectDiploma(key,fromHistory=false){
+
+ selected=key;
+
+ const d=DATA[key];
+
+ document.getElementById("selectedDiploma").value=d.name;
+
+ document.getElementById("selectedLabel").textContent=d.name;
+
+ document.getElementById("crumb").textContent=
+  "Diploma / "+d.name;
+
+
+ const reg=document.getElementById("regulation");
+
+ reg.innerHTML=Object.keys(d.regs).map(r=>`
+
+  <option value="${r}">
+   Probidhan ${r}
+  </option>
+
+ `).join("");
+
+
+ reg.onchange=()=>{
+
+  renderSemesters();
+
+  renderEngInfo();
+  renderAgriInfo();
+  renderLivestockInfo();
+  renderFisheriesInfo();
+  renderForestryInfo();
+  renderMarineInfo();
+  renderTextileInfo();
+
+ };
+
+
+ renderSemesters();
+
+ resetResult();
+
+ renderDiplomas();
+
+ renderEngInfo();
+ renderAgriInfo();
+ renderLivestockInfo();
+ renderFisheriesInfo();
+ renderForestryInfo();
+ renderMarineInfo();
+ renderTextileInfo();
+
+
+ showPage("calculatorPage");
+
+
+ if(!fromHistory && !suppressHistory){
+
+  history.pushState(
+   {view:"calc",key:key},
+   "",
+   "#"+key
+  );
+
+ }
+
+}
+
+
+/* =========================================================
+   BROWSER BACK / FORWARD
+========================================================= */
+
+window.addEventListener("popstate",function(){
+
+ suppressHistory=true;
+
+ const hash=location.hash.replace("#","");
+
+
+ if(hash==="privacy"){
+
+  showPage("privacyPage");
+
+ }
+
+ else if(hash && DATA[hash]){
+
+  selectDiploma(hash,true);
+
+ }
+
+ else{
+
+  goHome(false);
+
+ }
+
+ suppressHistory=false;
+
+});
+
+
+/* =========================================================
+   SEMESTER RENDER
+========================================================= */
+
+function renderSemesters(){
+
+ const d=DATA[selected];
+
+ const reg=document.getElementById("regulation").value;
+
+ const cfg=d.regs[reg];
+
+ const weights=getWeights(cfg);
+
+ const grid=document.getElementById("semesterGrid");
+
+
+ grid.innerHTML=Array.from(
+  {length:8},
+  (_,i)=>`
+
+   <div class="sem">
+
+    <div class="semhead">
+
+     <span>
+      ${i+1}${ordinal(i+1)} Semester
+     </span>
+
+     <span class="weight">
+      ${weights[i]}%
+     </span>
+
+    </div>
+
+    <input
+     id="sem${i+1}"
+     type="number"
+     min="0"
+     max="4"
+     step="0.01"
+     placeholder="0.00"
+     oninput="liveCalculate()">
+
+   </div>
+
+  `
+ ).join("");
+
+
+ if(cfg.exact){
+
+  document.getElementById("methodNote").textContent=
+   "এই Engineering regulation-এর জন্য weighted semester formula ব্যবহার করা হচ্ছে।";
+
+ }
+
+ else{
+
+  document.getElementById("methodNote").textContent=
+   "এই programme/Probidhan-এর official semester weight এই calculator-এ verified নয়। তাই আপাতত ৮টি semester-কে সমান ১২.৫% weight ধরে হিসাব করা হচ্ছে।";
+
+ }
+
+ resetResult();
+
+}
+
+
+function ordinal(n){
+
+ if(n===1)return"st";
+
+ if(n===2)return"nd";
+
+ if(n===3)return"rd";
+
+ return"th";
+
+}
+
+
+/* =========================================================
+   ENGINEERING INFORMATION
+========================================================= */
+
+function renderEngInfo(){
+
+ const panel=document.getElementById("enginfoPanel");
+
+
+ if(selected!=="engineering"){
+
+  panel.style.display="none";
+
+  return;
+
+ }
+
+
+ panel.style.display="block";
+
+
+ const regs=DATA.engineering.regs;
+
+ const currentReg=
+  document.getElementById("regulation").value;
+
+
+ const years=Object.keys(regs);
+
+
+ let html=
+  "<tr><th class='sem'>Semester</th>"+
+  years.map(y=>
+   `<th class="${y===currentReg?'active':''}">
+    ${y}
+   </th>`
+  ).join("")+
+  "</tr>";
+
+
+ for(let i=0;i<8;i++){
+
+  html+=
+   "<tr>"+
+   "<td class='sem'>"+
+   (i+1)+ordinal(i+1)+
+   "</td>"+
+   years.map(y=>
+    `<td class="${y===currentReg?'active':''}">
+     ${regs[y].weights[i]}%
+    </td>`
+   ).join("")+
+   "</tr>";
+
+ }
+
+
+ html+=
+  "<tr>"+
+  "<td class='sem'>Total</td>"+
+  years.map(y=>
+   `<td class="${y===currentReg?'active':''}">
+    100%
+   </td>`
+  ).join("")+
+  "</tr>";
+
+
+ document.getElementById("weightTable").innerHTML=html;
+
+}
+
+
+function renderAgriInfo(){
+
+ const panel=document.getElementById("agriinfoPanel");
+
+ panel.style.display=
+  (selected==="agriculture")?"block":"none";
+
+}
+
+
+function renderLivestockInfo(){
+
+ const panel=document.getElementById("livestockinfoPanel");
+
+ panel.style.display=
+  (selected==="livestock")?"block":"none";
+
+}
+
+
+function renderFisheriesInfo(){
+
+ const panel=document.getElementById("fisheriesinfoPanel");
+
+ panel.style.display=
+  (selected==="fisheries")?"block":"none";
+
+}
+
+
+function renderForestryInfo(){
+
+ const panel=document.getElementById("forestryinfoPanel");
+
+ panel.style.display=
+  (selected==="forestry")?"block":"none";
+
+}
+
+
+function renderMarineInfo(){
+
+ const panel=document.getElementById("marineinfoPanel");
+
+ panel.style.display=
+  (selected==="marine")?"block":"none";
+
+}
+
+
+function renderTextileInfo(){
+
+ const panel=document.getElementById("textileinfoPanel");
+
+ panel.style.display=
+  (selected==="textile")?"block":"none";
+
+}
+
+
+/* =========================================================
+   CALCULATE
+========================================================= */
+
+let hasCalculatedOnce=false;
+
+function calculate(){
+
+ hasCalculatedOnce=true;
+
+ const d=DATA[selected];
+
+ const reg=
+  document.getElementById("regulation").value;
+
+ const cfg=d.regs[reg];
+
+ const weights=getWeights(cfg);
+
+
+ let weightedSum=0;
+
+ let enteredWeight=0;
+
+ let enteredCount=0;
+
+ let enteredVals=[];
+
+
+ for(let i=0;i<8;i++){
+
+  const input=
+   document.getElementById("sem"+(i+1));
+
+  const v=parseFloat(input.value);
+
+
+  if(
+   Number.isFinite(v) &&
+   v>=0 &&
+   v<=4
+  ){
+
+   weightedSum+=v*weights[i];
+
+   enteredWeight+=weights[i];
+
+   enteredCount++;
+
+   enteredVals.push(v);
+
+  }
+
+ }
+
+
+ if(!enteredCount){
+
+  toast("কমপক্ষে একটি Semester GPA দিন");
+
+  return;
+
+ }
+
+
+ /*
+  IMPORTANT
+
+  এখানে বর্তমানে entered semester-এর GPA × weight
+  করে total programme weight অনুযায়ী CGPA-so-far
+  দেখানো হচ্ছে।
+
+  সব 8 semester input দিলে final CGPA সঠিকভাবে
+  100% weight-এর উপর দাঁড়াবে।
+ */
+
+ const progressCGPA=Math.min(
+  4,
+  Math.max(0,weightedSum/100)
+ );
+
+
+ const avgEntered=
+  enteredVals.reduce(
+   (a,b)=>a+b,
+   0
+  )/enteredVals.length;
+
+
+ document.getElementById("score").textContent=
+  progressCGPA.toFixed(2);
+
+
+ document.getElementById("done").textContent=
+  enteredCount+"/8";
+
+
+ document.getElementById("avg").textContent=
+  avgEntered.toFixed(2);
+
+
+ document.getElementById("best").textContent=
+  Math.max(...enteredVals).toFixed(2);
+
+
+ document.getElementById("weightDone").textContent=
+  enteredWeight.toFixed(1)+"%";
+
+
+ document.getElementById("progressFill").style.width=
+  enteredWeight.toFixed(1)+"%";
+
+
+ document.getElementById("status").textContent=
+  enteredCount===8
+   ? grade(progressCGPA)
+   : "চলমান — "+enteredWeight.toFixed(1)+"% সম্পন্ন";
+
+
+ document.getElementById("result")
+  .classList.add("show");
+
+
+ if(cfg.exact){
+
+  document.getElementById("methodNote").textContent=
+   "হিসাব: GPA × semester weight করে যোগ করা হয়েছে। সব ৮টি semester পূরণ করলে final CGPA পাওয়া যাবে। Probidhan "+reg+"।";
+
+ }
+
+ else{
+
+  document.getElementById("methodNote").textContent=
+   "এই programme-এর জন্য আপাতত প্রতিটি semester-কে ১২.৫% weight ধরে হিসাব করা হয়েছে। Official weight যাচাই হলে update করা উচিত।";
+
+ }
+
+}
+
+
+/* =========================================================
+   LIVE CALCULATE
+========================================================= */
+
+function liveCalculate(){
+
+ const anyVal=
+  Array.from(
+   {length:8},
+   (_,i)=>
+    parseFloat(
+     document.getElementById("sem"+(i+1)).value
+    )
+  ).some(
+   v=>
+    Number.isFinite(v) &&
+    v>=0 &&
+    v<=4
+  );
+
+
+ if(anyVal){
+
+  calculate();
+
+ }
+ else{
+
+  resetResult();
+
+ }
+
+}
+
+
+/* =========================================================
+   GRADE
+========================================================= */
+
+function grade(x){
+
+ if(x>=3.75)
+  return"Outstanding";
+
+ if(x>=3.50)
+  return"Excellent";
+
+ if(x>=3.00)
+  return"Very Good";
+
+ if(x>=2.75)
+  return"Good";
+
+ if(x>=2.00)
+  return"Pass";
+
+ return"Below Pass";
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+function resetCalc(){
+
+ hasCalculatedOnce=false;
+
+ for(let i=1;i<=8;i++){
+
+  const el=document.getElementById("sem"+i);
+
+  if(el){
+   el.value="";
+  }
+
+ }
+
+ resetResult();
+
+ toast("Calculator reset হয়েছে");
+
+}
+
+
+function resetResult(){
+
+ document.getElementById("result")
+  .classList.remove("show");
+
+ document.getElementById("score")
+  .textContent="0.00";
+
+ document.getElementById("done")
+  .textContent="0/8";
+
+ document.getElementById("avg")
+  .textContent="0.00";
+
+ document.getElementById("best")
+  .textContent="0.00";
+
+ document.getElementById("weightDone")
+  .textContent="0%";
+
+ document.getElementById("progressFill")
+  .style.width="0%";
+
+ document.getElementById("status")
+  .textContent="—";
+
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function toast(t){
+
+ const x=document.getElementById("toast");
+
+ x.textContent=t;
+
+ x.classList.add("show");
+
+ setTimeout(
+  ()=>x.classList.remove("show"),
+  2200
+ );
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+function toggleTheme(){
+
+ const isDark=
+  document.documentElement
+   .getAttribute("data-theme")==="dark";
+
+
+ if(!isDark){
+
+  document.documentElement
+   .setAttribute("data-theme","dark");
+
+
+  const r=
+   document.documentElement.style;
+
+
+  r.setProperty(
+   "--bg",
+   "#07111f"
+  );
+
+  r.setProperty(
+   "--panel",
+   "#0d1b2d"
+  );
+
+  r.setProperty(
+   "--panel2",
+   "#10243a"
+  );
+
+  r.setProperty(
+   "--text",
+   "#eef6ff"
+  );
+
+  r.setProperty(
+   "--muted",
+   "#9db0c7"
+  );
+
+  r.setProperty(
+   "--primary",
+   "#5eead4"
+  );
+
+  r.setProperty(
+   "--secondary",
+   "#60a5fa"
+  );
+
+  r.setProperty(
+   "--accent",
+   "#c084fc"
+  );
+
+  r.setProperty(
+   "--primaryRGB",
+   "94,234,212"
+  );
+
+  r.setProperty(
+   "--btnText",
+   "#04121d"
+  );
+
+  r.setProperty(
+   "--line",
+   "rgba(255,255,255,.10)"
+  );
+
+  r.setProperty(
+   "--shadow",
+   "0 24px 70px rgba(0,0,0,.35)"
+  );
+
+
+  document.body.style.background=
+   "radial-gradient(circle at 10% 0%,rgba(96,165,250,.18),transparent 28%),radial-gradient(circle at 90% 10%,rgba(192,132,252,.16),transparent 25%),linear-gradient(160deg,#06101d,#091727 55%,#06111d)";
+
+ }
+
+ else{
+
+  location.reload();
+
+ }
+
+}
+
+
+/* =========================================================
+   AGRICULTURE BOOKLIST (Diploma in Agriculture, Regulation 2022)
+   Source: BTEB Diploma in Agriculture course structure, Reg. 2022
+   Each subject: [code, name, credit, marks]
+========================================================= */
+
+const AGRI_SUBJECTS=[
+
+ [["22311","Introduction to Bangladesh Agriculture",3,150],
+  ["25711","Bangla-I",2,100],
+  ["25712","English-I",2,100],
+  ["25812","Physical Education & Life Skills Development",1,50],
+  ["25911","Mathematics-I",4,200],
+  ["25912","Physics-I",4,200],
+  ["25914","Chemistry-I",3,150],
+  ["25915","Biology-I",3,150]],
+
+ [["22321","Production Technology of Agronomic Crops-I",4,200],
+  ["25721","Bangla-II",2,100],
+  ["25722","English-II",2,100],
+  ["25922","Physics-II",4,200],
+  ["25924","Chemistry-II",3,150],
+  ["25925","Biology-II",3,150],
+  ["28511","Computer Office Application",2,100]],
+
+ [["22331","Production Technology of Agronomic Crops-II",4,200],
+  ["22332","Agricultural Economices",3,150],
+  ["22333","Soil Science-I",3,150],
+  ["22334","Cultivation of Vegetables",4,200],
+  ["22335","Agricultural Extention-I",3,150],
+  ["22336","Fish Culture Management",3,150]],
+
+ [["22341","Soil Science-II",3,150],
+  ["22342","Mansuration and Statistics",3,150],
+  ["22343","Forest and Forestry",3,150],
+  ["22344","Cultivation of Fruits",4,200],
+  ["22345","Fundamental and Ecological Entomology",3,150],
+  ["27435","Livestock and Poultry Production",3,150]],
+
+ [["22351","Agroforestry & Biodiversity",3,150],
+  ["22352","Crop Disease Management",4,200],
+  ["22353","Plant Nutrition and Fertilizer Management",4,200],
+  ["22354","Cultivation of Flowers & Ornamental Plants",3,150],
+  ["22355","Agriculture Mechanization",4,200],
+  ["22356","Irrigation and Water Management",3,150]],
+
+ [["22361","Organic Agriculture",3,150],
+  ["22362","Pest Management and Economic Entomology",4,200],
+  ["22363","Horticultural Nursery Management",3,150],
+  ["22364","Seed Technology",4,200],
+  ["22365","Food Processing",4,200],
+  ["22366","Agricultural Extension-II",4,200]],
+
+ [["22371","Farm Management",3,150],
+  ["22372","Agro Environment and Disaster Management",3,150],
+  ["22373","Food and Nutrition Management",3,150],
+  ["22374","Self Employment and Entrepreneurship Development",3,150],
+  ["22375","Postharvest Technology",3,150],
+  ["22376","Cultivation of Species Crops",3,150],
+  ["22377","Co-operative and Agricultural Marketing",3,150]],
+
+ [["22381","Field Attachment Training",8,400],
+  ["22381","Project Presentation",4,200]]
+
+];
+
+let agriSemIndex=0;
+
+function showAgriBookPage(){
+
+ agriSemIndex=0;
+
+ renderAgriSemTabs();
+ renderAgriSubjTable();
+
+ showPage("agriBookPage");
+
+}
+
+function renderAgriSemTabs(){
+
+ const tabs=document.getElementById("agriSemTabs");
+
+ tabs.innerHTML=AGRI_SUBJECTS.map((sem,i)=>
+
+  `<button
+    class="semtab ${i===agriSemIndex?'active':''}"
+    onclick="agriSelectSem(${i})">
+    ${i+1}${ordinal(i+1)}
+   </button>`
+
+ ).join("");
+
+}
+
+function agriSelectSem(i){
+
+ agriSemIndex=i;
+
+ renderAgriSemTabs();
+ renderAgriSubjTable();
+
+}
+
+function renderAgriSubjTable(){
+
+ const body=document.getElementById("agriSubjTableBody");
+
+ body.innerHTML=AGRI_SUBJECTS[agriSemIndex].map(s=>
+
+  `<tr>
+    <td class="code">${s[0]}</td>
+    <td>${s[1]}</td>
+    <td>${s[2]}</td>
+    <td>${s[3]}</td>
+   </tr>`
+
+ ).join("");
+
+}
+
+
+/* =========================================================
+   LIVESTOCK BOOKLIST (Diploma in Livestock, Regulation 2022)
+   Source: BTEB Diploma in Livestock course structure, Reg. 2022
+   Each subject: [code, name, credit, marks]
+========================================================= */
+
+const LIVESTOCK_SUBJECTS=[
+
+ [["25711","Bangla-I",2,100],
+  ["25712","English-I",2,100],
+  ["25812","Physical Education & Life Skills Development",1,50],
+  ["25911","Mathematics-I",4,200],
+  ["25912","Physics-I",4,200],
+  ["25914","Chemistry-I",3,150],
+  ["25915","Biology-I",3,150],
+  ["27211","Introduction to Livestock in Bangladesh",3,150]],
+
+ [["25721","Bangla-II",2,100],
+  ["25722","English-II",2,100],
+  ["25922","Physics-II",4,200],
+  ["25924","Chemistry-II",3,150],
+  ["25925","Biology-II",3,150],
+  ["28511","Computer Office Application",2,100],
+  ["27221","Fundamental of Animal Nutrition",3,150]],
+
+ [["27231","Basic Anatomy-I",3,150],
+  ["27232","Fundamental Physiology-I",3,150],
+  ["27233","Animal Science-I",3,150],
+  ["27234","Elementary Histology and Embryology",3,150],
+  ["27235","General Mircobiology",3,150],
+  ["27236","Fodder production and Feed Management",3,150]],
+
+ [["27241","Basic Anatomy-II",3,150],
+  ["27242","Fundamental Physiology-II",3,150],
+  ["27243","Animal Science-II",3,150],
+  ["27244","Meat Processing Technology",3,150],
+  ["22342","Mansuration and Statistics",3,150],
+  ["27245","Environmental Science and Disaster Management",3,150],
+  ["27246","Livestock Extension-I",3,150]],
+
+ [["27251","Introductory Parasitology",3,150],
+  ["27252","Fundamental Dairy Science",3,150],
+  ["27253","Fundamental Poultry Science",3,150],
+  ["27254","Basic Theriogenology",3,150],
+  ["27255","Veterinary Public Health and Food Safety",3,150],
+  ["27256","General Pathology and Lab Techniques",3,150],
+  ["27257","Basic Pharmacology and Pharmacy",3,150]],
+
+ [["27261","Parasites Management",3,150],
+  ["27262","Dairy Cattle Management",3,150],
+  ["27263","Poultry Farming Technology",3,150],
+  ["27264","Preventive Medicine",3,150],
+  ["27265","Animal & Animal Product Marketing",3,150],
+  ["27266","Introduction to Animal Diseases",4,200],
+  ["27267","Geneties and Animal Breeding",3,150]],
+
+ [["27271","Surgical Preperation and Post Operative Care",3,150],
+  ["27272","Animal by Product and waste management",3,150],
+  ["27273","Livestock Extension-II",3,150],
+  ["27274","Basic Clinical Medicine",3,150],
+  ["27275","Zoo and Aquatic Animal Management",4,200],
+  ["27276","Introductory Veterinary Jurisprudence and Ethics",2,100],
+  ["27277","Livestock Economics and Entrepreneurship",3,150]],
+
+ [["27281","Field Attachment Training",8,400],
+  ["27281","Project Presentation",4,200]]
+
+];
+
+let livestockSemIndex=0;
+
+function showLivestockBookPage(){
+
+ livestockSemIndex=0;
+
+ renderLivestockSemTabs();
+ renderLivestockSubjTable();
+
+ showPage("livestockBookPage");
+
+}
+
+function renderLivestockSemTabs(){
+
+ const tabs=document.getElementById("livestockSemTabs");
+
+ tabs.innerHTML=LIVESTOCK_SUBJECTS.map((sem,i)=>
+
+  `<button
+    class="semtab ${i===livestockSemIndex?'active':''}"
+    onclick="livestockSelectSem(${i})">
+    ${i+1}${ordinal(i+1)}
+   </button>`
+
+ ).join("");
+
+}
+
+function livestockSelectSem(i){
+
+ livestockSemIndex=i;
+
+ renderLivestockSemTabs();
+ renderLivestockSubjTable();
+
+}
+
+function renderLivestockSubjTable(){
+
+ const body=document.getElementById("livestockSubjTableBody");
+
+ body.innerHTML=LIVESTOCK_SUBJECTS[livestockSemIndex].map(s=>
+
+  `<tr>
+    <td class="code">${s[0]}</td>
+    <td>${s[1]}</td>
+    <td>${s[2]}</td>
+    <td>${s[3]}</td>
+   </tr>`
+
+ ).join("");
+
+}
+
+
+/* =========================================================
+   FISHERIES BOOKLIST (Diploma in Fisheries, Regulation 2022)
+   Source: BTEB Diploma in Fisheries course structure, Reg. 2022
+   Each subject: [code, name, credit, marks]
+========================================================= */
+
+const FISHERIES_SUBJECTS=[
+
+ [["25711","Bangla-I",2,100],
+  ["25712","English-I",2,100],
+  ["25812","Physical Education & Life Skills Development",1,50],
+  ["25911","Mathematics-I",4,200],
+  ["25912","Physics-I",4,200],
+  ["25914","Chemistry-I",3,150],
+  ["25915","Biology-I",3,150],
+  ["27411","Introduction and Probability of Fisheries Resources in Bangladesh",3,150]],
+
+ [["25721","Bangla-II",2,100],
+  ["25722","English-II",2,100],
+  ["25922","Physics-II",4,200],
+  ["25924","Chemistry-II",3,150],
+  ["25925","Biology-II",3,150],
+  ["28511","Computer Office Application",2,100],
+  ["27421","Limnology",3,150]],
+
+ [["27431","Introduction to Bangladesh Agriculture",3,150],
+  ["27432","Ichthyology",3,150],
+  ["27433","Aquatic Ecology",3,150],
+  ["27434","Aquaculture Engineering-1",3,150],
+  ["27435","Livestock and Poultry Production",3,150],
+  ["27436","Fish Physiology",3,150]],
+
+ [["27441","Fresh Water Aquaculture",3,150],
+  ["27442","Open Water Aquaculture Management",2,100],
+  ["27443","Fish Pathology & Parasitology",3,150],
+  ["27444","Fish Nursery Management",3,150],
+  ["27445","Fish Feed & Nutrition-I",3,150],
+  ["27446","Aquaculture Engineering-II",3,150],
+  ["27447","Aquatic Biodiversity Conservation & Management",3,150]],
+
+ [["27451","Modern Aquaculture",3,150],
+  ["27452","Fish Feed and Nutrition-II",3,150],
+  ["27453","Coastal Aquaculture Management",3,150],
+  ["27454","Fisheries Microbiology",3,150],
+  ["27455","Fisheries Extension",3,150],
+  ["27456","Fish Disease & Control",3,150],
+  ["27457","Fish Hatchery Management",3,150]],
+
+ [["27461","Shellfish Hatchery Management",3,150],
+  ["27462","Environmental Mangemant for Aquaculture",3,150],
+  ["27463","Fish Harvesting, Handling & Preservation",3,150],
+  ["27464","Fish Processing & Fishery Products",3,150],
+  ["27465","Marine Fisheries Resources",3,150],
+  ["22332","Agricultural Economices",3,150]],
+
+ [["27471","Fish Inspection & Quality Control",3,150],
+  ["27472","Fisheries Marketing and Cooperatives",3,150],
+  ["27473","Fisheries Resources Management and Planing",3,150],
+  ["27474","Good Aquaculture Practices",3,150],
+  ["27475","Genetics and Fish Breeding",3,150],
+  ["27476","Integrated Aquaculture",3,150],
+  ["22374","Self Employment and Entrepreneurship Development",3,150]],
+
+ [["27481","Field Attachment Training",8,400],
+  ["27481","Project Presentation",4,200]]
+
+];
+
+let fisheriesSemIndex=0;
+
+function showFisheriesBookPage(){
+
+ fisheriesSemIndex=0;
+
+ renderFisheriesSemTabs();
+ renderFisheriesSubjTable();
+
+ showPage("fisheriesBookPage");
+
+}
+
+function renderFisheriesSemTabs(){
+
+ const tabs=document.getElementById("fisheriesSemTabs");
+
+ tabs.innerHTML=FISHERIES_SUBJECTS.map((sem,i)=>
+
+  `<button
+    class="semtab ${i===fisheriesSemIndex?'active':''}"
+    onclick="fisheriesSelectSem(${i})">
+    ${i+1}${ordinal(i+1)}
+   </button>`
+
+ ).join("");
+
+}
+
+function fisheriesSelectSem(i){
+
+ fisheriesSemIndex=i;
+
+ renderFisheriesSemTabs();
+ renderFisheriesSubjTable();
+
+}
+
+function renderFisheriesSubjTable(){
+
+ const body=document.getElementById("fisheriesSubjTableBody");
+
+ body.innerHTML=FISHERIES_SUBJECTS[fisheriesSemIndex].map(s=>
+
+  `<tr>
+    <td class="code">${s[0]}</td>
+    <td>${s[1]}</td>
+    <td>${s[2]}</td>
+    <td>${s[3]}</td>
+   </tr>`
+
+ ).join("");
+
+}
+
+
+/* =========================================================
+   FORESTRY BOOKLIST (Diploma in Forestry, Regulation 2022)
+   Source: BTEB Diploma in Forestry course structure, Reg. 2022
+   Each subject: [code, name, credit, marks]
+========================================================= */
+
+const FORESTRY_SUBJECTS=[
+
+ [["22011","Introduction to Forestry",3,150],
+  ["25711","Bangla-I",2,100],
+  ["25712","English-I",2,100],
+  ["25812","Physical Education & Life Skills Development",1,50],
+  ["25911","Mathematics-I",4,200],
+  ["25912","Physics-I",4,200],
+  ["25914","Chemistry-I",3,150],
+  ["25915","Biology-I",3,150]],
+
+ [["22021","Geology & Soil Science",3,150],
+  ["25721","Bangla-II",2,100],
+  ["25722","English-II",2,100],
+  ["25922","Physics-II",4,200],
+  ["25924","Chemistry-II",3,150],
+  ["25925","Biology-II",3,150],
+  ["28511","Computer Office Application",2,100],
+  ["22022","Physical Exercises-I",1,50]],
+
+ [["22031","Forest Menstruation",4,200],
+  ["22032","Physical Exercises-II",1,50],
+  ["22033","Soil Conservation and Watershed Management",3,150],
+  ["22034","Principle and Practice of Silviculture",4,200],
+  ["22035","Forest Statistics",3,150],
+  ["22036","Project Work-I",1,50],
+  ["22037","Forest Ecology",2,100],
+  ["22038","Application of Computer in Forestry",2,100]],
+
+ [["22041","Forest Engineering-I",4,200],
+  ["22042","Physical Exercises-III",1,50],
+  ["22043","Forest Protection",4,200],
+  ["22044","Plantation Silviculture",4,200],
+  ["22045","Forest Based Rural Industries & Community Development",2,100],
+  ["22046","Project Work-II",1,50],
+  ["22047","Forest Utilization",3,150],
+  ["25811","Social Science",2,100]],
+
+ [["22051","Forest Engineering-II",3,150],
+  ["22052","Games and Sports-I",1,50],
+  ["22053","Silvicultural System",3,150],
+  ["22054","Forest Policy and Law-I",3,150],
+  ["22055","Forest Serveying and Settlement",4,200],
+  ["22056","Wildlife Management",2,100],
+  ["22057","Protected Area Management and Eco-tourism",2,100],
+  ["22058","Forest Genetics and Tree Improvement",3,150]],
+
+ [["22061","Forestry Extension",4,200],
+  ["22062","Games and Sports-II",1,50],
+  ["22063","Social Forestry",3,150],
+  ["22064","Forest Policy and Law-2",3,150],
+  ["22065","Forest Management",3,150],
+  ["22066","Forest Accounts and Procedures",3,150],
+  ["22067","Agroforestry",3,150],
+  ["22068","Entrepreneurship",2,100]],
+
+ [["22071","Biodiversity Conservation",2,100],
+  ["22072","Games and Sports-III",1,50],
+  ["22073","Rubber, Tea, Agar and Medicinal Plant Cultivation",4,200],
+  ["22074","Climate Change and Forestry",3,150],
+  ["22075","Mangrove Ecology And Costal Plantation",3,150],
+  ["22076","Forest Resources Economics",3,150],
+  ["22077","GIS And Remote Sensing In Forestry",4,200],
+  ["22078","Environmental Management",2,100]],
+
+ [["22081","Field Attachment Training",8,400],
+  ["22081","Project Presentation",4,200]]
+
+];
+
+let forestrySemIndex=0;
+
+function showForestryBookPage(){
+
+ forestrySemIndex=0;
+
+ renderForestrySemTabs();
+ renderForestrySubjTable();
+
+ showPage("forestryBookPage");
+
+}
+
+function renderForestrySemTabs(){
+
+ const tabs=document.getElementById("forestrySemTabs");
+
+ tabs.innerHTML=FORESTRY_SUBJECTS.map((sem,i)=>
+
+  `<button
+    class="semtab ${i===forestrySemIndex?'active':''}"
+    onclick="forestrySelectSem(${i})">
+    ${i+1}${ordinal(i+1)}
+   </button>`
+
+ ).join("");
+
+}
+
+function forestrySelectSem(i){
+
+ forestrySemIndex=i;
+
+ renderForestrySemTabs();
+ renderForestrySubjTable();
+
+}
+
+function renderForestrySubjTable(){
+
+ const body=document.getElementById("forestrySubjTableBody");
+
+ body.innerHTML=FORESTRY_SUBJECTS[forestrySemIndex].map(s=>
+
+  `<tr>
+    <td class="code">${s[0]}</td>
+    <td>${s[1]}</td>
+    <td>${s[2]}</td>
+    <td>${s[3]}</td>
+   </tr>`
+
+ ).join("");
+
+}
+
+
+/* =========================================================
+   MARINE BOOKLIST (Diploma in Marine Engineering, Regulation 2022)
+   Source: BTEB Marine Technology course structure, Reg. 2022
+   Each subject: [code, name, credit, marks]
+========================================================= */
+
+const MARINE_SUBJECTS=[
+
+ [["21011","Engineering Drawing",2,100],
+  ["25711","Bangla-I",2,100],
+  ["25712","English-I",2,100],
+  ["25812","Physical Education & Life Skills Development",1,50],
+  ["25911","Mathematics-I",4,200],
+  ["25912","Physics-I",4,200],
+  ["26711","Basic Electricity",4,200],
+  ["27011","Basic Workshop Practice",1,50]],
+
+ [["25721","Bangla-II",2,100],
+  ["25722","English-II",2,100],
+  ["25913","Chemistry",4,200],
+  ["25921","Mathematics-II",4,200],
+  ["25922","Physics-II",4,200],
+  ["26811","Basic Electronics",3,150],
+  ["27012","Machine Shop Practice-I",3,150],
+  ["28021","General Ship Knowledge",1,50]],
+
+ [["25811","Social Science",2,100],
+  ["25931","Mathematics-III",4,200],
+  ["27032","Machine Shop Practice-II",3,150],
+  ["27041","Engineering Mechanics",3,150],
+  ["27131","Engineering Thermodynamics",4,200],
+  ["27931","Marine IC Engine-I",3,150]],
+
+ [["25841","Accounting",2,100],
+  ["27043","Metallurgy",3,150],
+  ["27941","Fluid Mechanics & Hydraulic Machinery",4,200],
+  ["27942","Marine IC Engine-II",4,200],
+  ["28041","Naval Architecture",3,150],
+  ["28042","Welding",3,150],
+  ["28511","Computer Office Application",2,100]],
+
+ [["27951","Marine Auxiliary Systems",3,150],
+  ["27952","Marine Boiler & Steam Engineering",3,150],
+  ["27953","Marine Fuels & Lubricants",2,100],
+  ["27954","Marine IC Engine Operation & Maintenance",2,100],
+  ["27955","Basic Safety & Security",4,200],
+  ["27956","Maritime Laws",2,100],
+  ["27957","Machine Drawing",1,50],
+  ["28053","Ship Construction & Repair",4,200]],
+
+ [["25852","Industrial Management",2,100],
+  ["27061","Strength of Materials",4,200],
+  ["27063","CAD & CAM",3,150],
+  ["27961","Power System Protection",2,100],
+  ["27962","Marine Electrical Installation & Instrumentation",3,150],
+  ["27963","Shipboard Deck machinery, Out-fittings & Bridge Equipment",2,100],
+  ["27964","Marine Propulsion & Steering System",3,150],
+  ["27965","Marine Enviromental Science",2,100]],
+
+ [["25851","Principles of Marketing",2,100],
+  ["25853","Innovation & Entrepreneurship",2,100],
+  ["27971","Leadership & Professional Ethics",2,100],
+  ["27972","Advanced Machine Drawing",2,100],
+  ["27973","Marine IC Engine Overhauling and Record Keeping",3,150],
+  ["27974","Career Guideline in Maritime Sector",2,100],
+  ["27231","RAC Cycles and Components",3,150],
+  ["27975","Applied Mechanics",2,100],
+  ["27976","Applied Heat",4,200]],
+
+ [["27981","Industrial Atatchement",8,400],
+  ["27981","Presentation on Industrial Atatchements",4,200]]
+
+];
+
+let marineSemIndex=0;
+
+function showMarineBookPage(){
+
+ marineSemIndex=0;
+
+ renderMarineSemTabs();
+ renderMarineSubjTable();
+
+ showPage("marineBookPage");
+
+}
+
+function renderMarineSemTabs(){
+
+ const tabs=document.getElementById("marineSemTabs");
+
+ tabs.innerHTML=MARINE_SUBJECTS.map((sem,i)=>
+
+  `<button
+    class="semtab ${i===marineSemIndex?'active':''}"
+    onclick="marineSelectSem(${i})">
+    ${i+1}${ordinal(i+1)}
+   </button>`
+
+ ).join("");
+
+}
+
+function marineSelectSem(i){
+
+ marineSemIndex=i;
+
+ renderMarineSemTabs();
+ renderMarineSubjTable();
+
+}
+
+function renderMarineSubjTable(){
+
+ const body=document.getElementById("marineSubjTableBody");
+
+ body.innerHTML=MARINE_SUBJECTS[marineSemIndex].map(s=>
+
+  `<tr>
+    <td class="code">${s[0]}</td>
+    <td>${s[1]}</td>
+    <td>${s[2]}</td>
+    <td>${s[3]}</td>
+   </tr>`
+
+ ).join("");
+
+}
+
+
+/* =========================================================
+   TEXTILE BOOKLIST (Diploma in Textile Engineering, Regulation 2022)
+   Source: BTEB Textile Engineering course structure, Reg. 2022
+   Each subject: [code, name, credit, marks]
+========================================================= */
+
+const TEXTILE_SUBJECTS=[
+
+ [["21111","General Textile Processing-I",3,150],
+  ["25711","Bangla-I",2,100],
+  ["25712","English-I",2,100],
+  ["25811","Social Science",2,100],
+  ["25812","Physical Education & Life Skills Development",1,50],
+  ["25911","Mathematics-I",4,200],
+  ["25912","Physics-I",4,200],
+  ["25914","Chemistry-I",3,150]],
+
+ [["21011","Engineering Drawing",2,100],
+  ["21121","General Textile Processing-II",3,150],
+  ["25721","Bangla-II",2,100],
+  ["25722","English-II",2,100],
+  ["25921","Mathematics-II",4,200],
+  ["25922","Physics-II",4,200],
+  ["25924","Chemistry-II",3,150]],
+
+ [["21131","Natural Textile Fibre",2,100],
+  ["21132","Yarn Manufacturing-I",4,200],
+  ["21231","Fabric Manufacturing-I",4,200],
+  ["25831","Business Communication",2,100],
+  ["25916","Statistics",2,100],
+  ["26711","Basic Electricity",4,200],
+  ["27011","Basic Workshop Practice",1,50],
+  ["28511","Computer Office Application",2,100]],
+
+ [["21141","Man Made Fibre & Filament",2,100],
+  ["21142","Yarn Manufacturing-II",4,200],
+  ["21241","Fabric Manufacturing-II",4,200],
+  ["21341","Wet Processing-I",4,200],
+  ["21342","Sustainibilty in Textile Industry",2,100],
+  ["21441","Apparel Manufacturing-I",4,200],
+  ["26811","Basic Electronics",3,150]],
+
+ [["21151","Textile Testing & Quality Control-I",4,200],
+  ["21251","Fabric Structure & Design",4,200],
+  ["21351","Wet Processing-II",4,200],
+  ["21451","Apparel Manufacturing-II",4,200],
+  ["21452","Compliance in Textile industry",2,100],
+  ["21851","Basic Machine Maintenance",2,100]],
+
+ [["21161","Textile Testing & Quality Control-II",4,200],
+  ["21862","Yarn Manufacturing Machinery and Maintenance",3,150],
+  ["21863","Fabric Manufacturing Machinery and Maintenance",3,150],
+  ["21864","Utility Machinery",3,150],
+  ["21865","Engineering Mechanics",3,150],
+  ["21866","Textile Machine Metallurgy",2,100],
+  ["25851","Principles of Marketing",2,100],
+  ["29041","Environmental Studies",3,150]],
+
+ [["21871","Machine Control Engineering",3,150],
+  ["21872","Design of Machine Elements",4,200],
+  ["21873","Wet Process Machinery and Maintenance",3,150],
+  ["21875","Apparel Manufacturing Machinery and Maintenance",3,150],
+  ["25852","Industrial Management",2,100],
+  ["25842","Accounting & Cost Management",3,150],
+  ["25853","Innovation & Entrepreneurship",2,100]],
+
+ [["21881","Industrial Training",8,400],
+  ["21881","Graduation Project Presentation",4,200]]
+
+];
+
+let textileSemIndex=0;
+
+function showTextileBookPage(){
+
+ textileSemIndex=0;
+
+ renderTextileSemTabs();
+ renderTextileSubjTable();
+
+ showPage("textileBookPage");
+
+}
+
+function renderTextileSemTabs(){
+
+ const tabs=document.getElementById("textileSemTabs");
+
+ tabs.innerHTML=TEXTILE_SUBJECTS.map((sem,i)=>
+
+  `<button
+    class="semtab ${i===textileSemIndex?'active':''}"
+    onclick="textileSelectSem(${i})">
+    ${i+1}${ordinal(i+1)}
+   </button>`
+
+ ).join("");
+
+}
+
+function textileSelectSem(i){
+
+ textileSemIndex=i;
+
+ renderTextileSemTabs();
+ renderTextileSubjTable();
+
+}
+
+function renderTextileSubjTable(){
+
+ const body=document.getElementById("textileSubjTableBody");
+
+ body.innerHTML=TEXTILE_SUBJECTS[textileSemIndex].map(s=>
+
+  `<tr>
+    <td class="code">${s[0]}</td>
+    <td>${s[1]}</td>
+    <td>${s[2]}</td>
+    <td>${s[3]}</td>
+   </tr>`
+
+ ).join("");
+
+}
+
+
+/* =========================================================
+   TECHNOLOGY INFORMATION (Diploma in Engineering, Regulation 2022)
+   Source: BTEB Diploma in Engineering course structure, Reg. 2022
+========================================================= */
+
+const TECH_SUBJECTS={
+
+ computer_science:{
+  name:"Computer Science & Technology",
+  icon:"💻",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25911","Mathematics-I"],["25912","Physics-I"],["28511","Computer Office Application"],["26711","Basic Electricity"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25812","Physical Education & Life Skills Development"],["25913","Chemistry"],["25921","Mathematics-II"],["28521","Python Programming"],["28522","Computer Graphics Design-I"],["26811","Basic Electronics"]],
+   [["25811","Social Science"],["25922","Physics-II"],["25931","Mathematics-III"],["28531","Application Development Using Python"],["28532","Computer Graphics Design-II"],["28533","IT Support Services"],["26831","Digital Electronics-I"]],
+   [["25831","Business Communication"],["28541","Java Programming"],["28542","Data Structure & Algorithm"],["28543","Computer Peripherals & Interfacing"],["28544","Web Design & Development-I"],["26841","Digital Electronics-II"],["29041","Environmental Studies"]],
+   [["25841","Accounting"],["28551","Application Development Using Java"],["28552","Web Design & Development-II"],["28553","Computer Architecture & Microprocessor"],["28554","Data Communication"],["28555","Operating System"],["28556","Project Work-I"]],
+   [["25851","Principles of Marketing"],["25852","Industrial Management"],["28561","Database Management System"],["28562","Computer Networking"],["28563","Sensor & IoT System"],["28564","Microcontroller Based System Design & Development"],["28565","Surveillance Security System"],["28566","Web Development Project"]],
+   [["25853","Innovation & Entrepreneurship"],["28571","Digital Marketing Technique"],["28572","Network Administration & Services"],["28573","Cyber Security & Ethics"],["28574","Apps Development Project"],["28575","Multimedia & Animation"],["28576","Project Work-II"]],
+   [["28581","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ civil:{
+  name:"Civil Technology",
+  icon:"🏗️",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25811","Social Science"],["25911","Mathematics-I"],["25913","Chemistry"],["26411","Civil Engineering Materials"],["26711","Basic Electricity"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25812","Physical Education & Life Skills Development"],["25912","Physics-I"],["25921","Mathematics-II"],["26421","Civil Engineering Drawing"],["26811","Basic Electronics"],["27011","Basic Workshop Practice"]],
+   [["25831","Business Communication"],["25922","Physics-II"],["25931","Mathematics-III"],["26431","Structural Mechanics"],["26432","Surveying-I"],["26433","Construction Process-I"],["28511","Computer Office Application"]],
+   [["25841","Accounting"],["26441","Construction Process-II"],["26442","Estimating & Costing-I"],["26443","Civil CAD-I"],["26444","Surveying-II"],["26445","Geotechnical Engineering"],["26446","Hydrology"],["26521","Wood Workshop Practice"]],
+   [["25852","Industrial Management"],["26451","Foundation Engineering"],["26452","Civil CAD-II"],["26453","Surveying-III"],["26454","Theory of Structure"],["26455","Water Supply Engineering"],["26456","Hydraulics"]],
+   [["26461","Water Resources Engineering"],["26462","Advance Surveying"],["26463","Transportation Engineering-I"],["26464","Design of Structure-I"],["28863","Steel Structures"],["28861","Advanced Construction"],["29041","Environmental Studies"]],
+   [["25851","Principles of Marketing"],["25853","Innovation & Entrepreneurship"],["26471","Civil Engineering Project"],["26472","Sanitary Engineering"],["26473","Transportation Engineering-II"],["26474","Design of Structure-II"],["26475","Estimating & Costing-II"],["28871","Construction Management & Documentation"]],
+   [["26481","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ electrical:{
+  name:"Electrical Technology",
+  icon:"⚡",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25812","Physical Education & Life Skills Development"],["25911","Mathematics-I"],["25912","Physics-I"],["26711","Basic Electricity"],["26712","Electrical Engineering Materials"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25921","Mathematics-II"],["25922","Physics-II"],["26721","Electrical Circuits-I"],["26722","Electrical Engineering Drawing"],["26811","Basic Electronics"]],
+   [["25931","Mathematics-III"],["25913","Chemistry"],["28511","Computer Office Application"],["26731","Electrical Circuits-II"],["26732","Electrical Appliances"],["26833","Industrial Electronics"]],
+   [["25811","Social Science"],["25841","Accounting"],["26741","Electrical Installation, Planning and Estimating"],["26742","DC Machine"],["26743","Electrical Engineering Project-I"],["26845","Digital Electronics"],["27044","Applied Mechanics"]],
+   [["25851","Principles of Marketing"],["25852","Industrial Management"],["26751","Generation of Electrical Power"],["26752","Electrical & Electronic Measurements-I"],["26753","Testing and Maintenance of Electrical Equipments"],["26754","Electrical Engineering Project-II"],["26853","Microprocessor & Microcontroller"]],
+   [["28567","Programming in C"],["26761","AC Machine-I"],["26762","Transmission and Distribution of Electrical Power-I"],["26763","Electrical & Electronic Measurements-II"],["26842","Communication Engineering"],["29041","Environmental Studies"]],
+   [["25831","Business Communication"],["25853","Innovation & Entrepreneurship"],["26771","AC Machine-II"],["26772","Transmission and Distribution of Electrical Power-II"],["26773","Switch Gear and Protection"],["26774","Electrical Engineering Project-III"],["26875","Automation Engineering & PLC"]],
+   [["26781","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ electronics:{
+  name:"Electronics Technology",
+  icon:"🔌",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25911","Mathematics-I"],["25912","Physics-I"],["26711","Basic Electricity"],["26811","Basic Electronics"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25811","Social Science"],["25812","Physical Education & Life Skills Development"],["25913","Chemistry"],["25921","Mathematics-II"],["26721","Electrical Circuits-I"],["26821","Electronic Devices and Circuits"]],
+   [["25922","Physics-II"],["25931","Mathematics-III"],["28511","Computer Office Application"],["26731","Electrical Circuits-II"],["26831","Digital Electronics-I"],["26832","Power Electronics"]],
+   [["25841","Accounting"],["26741","Electrical Installation, Planning and Estimating"],["26742","DC Machine"],["26841","Digital Electronics-II"],["26842","Communication Engineering"],["26843","Networks, Filters and Transmission Lines"],["26844","Electronic Servicing"]],
+   [["25851","Principles of Marketing"],["25852","Industrial Management"],["28567","Programming in C"],["26751","Generation of Electrical Power"],["26752","Electrical & Electronic Measurements-I"],["26851","Television Engineering"],["26852","Electronic Appliances"],["28654","Bio-Medical Instruments"]],
+   [["26761","AC Machine-I"],["26764","Transmission and Distribution of Electrical Power"],["26763","Electrical & Electronic Measurements-II"],["26861","TV Studio and Broadcasting"],["26862","Microcontroller and Embedded System"],["26863","PCB Design and Prototyping"],["29041","Environmental Studies"]],
+   [["25831","Business Communication"],["25853","Innovation & Entrepreneurship"],["26771","AC Machine-II"],["26871","Microwave Radar and Navigation Aids"],["26872","Industrial Automation and PLC"],["26873","Control System and Robotics"],["26874","Electronic Project"]],
+   [["26881","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ mechanical:{
+  name:"Mechanical Technology",
+  icon:"⚙️",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25812","Physical Education & Life Skills Development"],["25911","Mathematics-I"],["25912","Physics-I"],["27011","Basic Workshop Practice"],["27012","Machine Shop Practice-I"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25913","Chemistry"],["25921","Mathematics-II"],["25922","Physics-II"],["26711","Basic Electricity"],["27021","Mechanical Engineering Drawing"]],
+   [["25811","Social Science"],["25831","Business Communication"],["25931","Mathematics-III"],["27031","Mechanical Engineering Materials"],["27032","Machine Shop Practice-II"],["27231","RAC Cycles and Components"],["28511","Computer Office Application"]],
+   [["25841","Accounting"],["26811","Basic Electronics"],["27041","Engineering Mechanics"],["27042","Machine Shop Practice-III"],["27043","Metallurgy"],["27131","Engineering Thermodynamics"],["29041","Environmental Studies"]],
+   [["25852","Industrial Management"],["27051","Fluid Mechanics & Machineries"],["27052","Mechanical Estimating & Costing"],["27053","Advanced Welding-I"],["27054","Foundry & Pattern Making"],["27055","Manufacturing Process"],["28567","Programming in C"]],
+   [["25851","Principles of Marketing"],["26211","Automobile Fundamentals"],["27061","Strength of Materials"],["27062","Mechanical Measurement & Metrology"],["27063","CAD & CAM"],["27064","Advanced Welding-II"],["27065","Plant Engineering & Maintenance"]],
+   [["25853","Innovation & Entrepreneurship"],["27071","Design of Machine Elements"],["27072","Tool Design"],["27073","Heat Treatment of Metal"],["27074","Mechanical Engineering Project"],["27075","Production Planning & Control"],["29231","Mechatronics & PLC"]],
+   [["27081","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ power:{
+  name:"Power Technology",
+  icon:"🔋",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25811","Social Science"],["25812","Physical Education & Life Skills Development"],["25911","Mathematics-I"],["25912","Physics-I"],["27111","Power Engineering Fundamental"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25913","Chemistry"],["25921","Mathematics-II"],["26711","Basic Electricity"],["27011","Basic Workshop Practice"],["27121","Power Equipment Management & Safety"],["28511","Computer Office Application"]],
+   [["25922","Physics-II"],["25931","Mathematics-III"],["26811","Basic Electronics"],["27012","Machine Shop Practice-I"],["27131","Engineering Thermodynamics"],["27231","RAC Cycles and Components"]],
+   [["25841","Accounting"],["27041","Engineering Mechanics"],["27043","Metallurgy"],["27141","IC Engine Details"],["27142","Fuels & Lubricants"],["26262","Suspension, Brake, Steering & Transmission System of Vehicle"],["28567","Programming in C"]],
+   [["25831","Business Communication"],["25852","Industrial Management"],["26241","Automotive Body Building"],["27051","Fluid Mechanics & Machineries"],["27053","Advanced Welding-I"],["27151","Automotive Electricity, Electronics & Automation"],["27152","Power Plant Engineering"]],
+   [["26764","Transmission and Distribution of Electrical Power"],["27061","Strength of Materials"],["27062","Mechanical Measurement & Metrology"],["27065","Plant Engineering & Maintenance"],["27161","Engine Overhauling, Inspection & Testing"],["29041","Environmental Studies"]],
+   [["25851","Principles of Marketing"],["25853","Innovation & Entrepreneurship"],["27071","Design of Machine Elements"],["27073","Heat Treatment of Metal"],["27171","Service Station Operation & Estimating"],["27172","Hybrid & Electric Vehicle"],["27173","Power Engineering Project"]],
+   [["27181","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ architecture:{
+  name:"Architecture Technology",
+  icon:"🏠",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25812","Physical Education & Life Skills Development"],["25911","Mathematics-I"],["25913","Chemistry"],["26111","Creativity and Concept Development"],["26711","Basic Electricity"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25912","Physics-I"],["25921","Mathematics-II"],["26121","Architectural Design-I"],["26411","Civil Engineering Materials"],["28511","Computer Office Application"]],
+   [["25922","Physics-II"],["25931","Mathematics-III"],["26131","Architectural Design-II"],["26132","Architectural Graphics"],["26133","Working Drawing-I"],["26134","Climatology"],["26135","Computer Aided Drawing-I"]],
+   [["25811","Social Science"],["25841","Accounting"],["26141","Architectural Design-III"],["26142","History of Architecture-I"],["26143","Working Drawing-II"],["26144","Computer Aided Drawing-II"],["26434","Basic Construction Process"],["26447","Basic Estimating & Costing"]],
+   [["25831","Business Communication"],["26151","Architectural Design-IV"],["26152","History of Architecture-II"],["26153","Model Making"],["26154","Presentation and Visual Technique"],["26431","Structural Mechanics"],["26457","Water Supply and Sanitary Engineering"]],
+   [["25852","Industrial Management"],["26161","Architectural Design-V"],["26162","Computer Rendering and Animation-I"],["26163","Landscape Design"],["26164","Modern Architecture"],["26165","Interior Design-I"],["26464","Design of Structure-I"],["29041","Environmental Studies"]],
+   [["25851","Principles of Marketing"],["25853","Innovation & Entrepreneurship"],["26171","Architectural Project"],["26172","Computer Rendering and Animation-II"],["26173","Urban Planning"],["26174","Professional Practice"],["26175","Interior Design-II"],["27821","Basic Surveying"]],
+   [["26181","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ automobile:{
+  name:"Automobile Technology",
+  icon:"🚗",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25911","Mathematics-I"],["25912","Physics-I"],["26211","Automobile Fundamentals"],["26711","Basic Electricity"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25812","Physical Education & Life Skills Development"],["25913","Chemistry"],["25921","Mathematics-II"],["25922","Physics-II"],["26221","Automotive Engine System-I"],["27011","Basic Workshop Practice"]],
+   [["25811","Social Science"],["25931","Mathematics-III"],["26231","Automotive Engine System-II"],["26811","Basic Electronics"],["27012","Machine Shop Practice-I"],["27031","Mechanical Engineering Materials"],["28511","Computer Office Application"]],
+   [["25841","Accounting"],["26241","Automotive Body Building"],["27041","Engineering Mechanics"],["27043","Metallurgy"],["27131","Engineering Thermodynamics"],["27142","Fuels & Lubricants"],["29041","Environmental Studies"]],
+   [["25852","Industrial Management"],["26251","Automobile Air-Conditioning"],["26252","Advance Automotive Mechanisms"],["27051","Fluid Mechanics & Machineries"],["27052","Mechanical Estimating & Costing"],["27053","Advanced Welding-I"],["27055","Manufacturing Process"]],
+   [["25831","Business Communication"],["25851","Principles of Marketing"],["26261","Engine Overhauling & Inspection"],["26262","Suspension, Brake, Steering & Transmission System of Vehicle"],["26263","Specialized Vehicles, Two & Three Wheelers"],["27054","Foundry & Pattern Making"],["27061","Strength of Materials"],["27062","Mechanical Measurement & Metrology"]],
+   [["25853","Innovation & Entrepreneurship"],["26271","Electrical, Electronic & Vehicle Networking System"],["26272","Automotive Testing & Emission Control"],["26273","Shop Equipment, Service Station Operation & Workshop Practice"],["26274","Automobile Engineering Project"],["27071","Design of Machine Elements"],["29231","Mechatronics & PLC"]],
+   [["26281","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ chemical:{
+  name:"Chemical Technology",
+  icon:"🧪",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25812","Physical Education & Life Skills Development"],["25911","Mathematics-I"],["25913","Chemistry"],["26311","Chemical Engineering Fundamentals"],["26312","Safety in Chemical Industry"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25912","Physics-I"],["25921","Mathematics-II"],["26321","Basic Stoichiometry"],["26322","Chemical Engineering Drawing"],["26811","Basic Electronics"],["27011","Basic Workshop Practice"]],
+   [["25811","Social Science"],["25922","Physics-II"],["25931","Mathematics-III"],["26331","Chemical Engineering Operation-I"],["26332","Industrial Chemistry"],["26333","Chemical Engineering Materials"],["26711","Basic Electricity"]],
+   [["25831","Business Communication"],["25841","Accounting"],["26341","Chemical Engineering Operation-II"],["26342","Chemical Process Industries-I"],["26343","Oil, Fats & Waxes"],["26344","Analytical Chemistry"],["28511","Computer Office Application"],["27041","Engineering Mechanics"]],
+   [["25852","Industrial Management"],["26351","Chemical Engineering Operation-III"],["26352","Chemical Process Industries-II"],["26353","Water Treatment Technology"],["26354","Industrial Instrumentation & Process Control"],["26355","Refrigeration & Cold Storage"],["26356","Industrial Production Engineering"]],
+   [["25851","Principles of Marketing"],["26361","Chemical Engineering Operation-IV"],["26362","Chemical Process Industries-III"],["26363","Petroleum & Petrochemicals"],["26364","Industrial Stoichiometry & Thermodynamics"],["26365","Instrumental Methods of Analysis"],["26366","Jute & Textile Technology"]],
+   [["25853","Innovation & Entrepreneurship"],["26371","Chemical Engineering Operation-V"],["26372","Chemical Process Industries-IV"],["26373","Natural Gas & Fertilizer"],["26374","Plastic & Polymer Technology"],["26375","Corrosion Technology"],["26376","Chemical Engineering Project"],["29041","Environmental Studies"]],
+   [["26381","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ rac:{
+  name:"Refrigeration & Air Conditioning Technology",
+  icon:"❄️",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25811","Social Science"],["25911","Mathematics-I"],["25912","Physics-I"],["27011","Basic Workshop Practice"],["27211","RAC Fundamental"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25812","Physical Education & Life Skills Development"],["25913","Chemistry"],["25921","Mathematics-II"],["26711","Basic Electricity"],["27021","Mechanical Engineering Drawing"],["27031","Mechanical Engineering Materials"]],
+   [["25831","Business Communication"],["25922","Physics-II"],["25931","Mathematics-III"],["26211","Automobile Fundamentals"],["26811","Basic Electronics"],["27131","Engineering Thermodynamics"],["27231","RAC Cycles and Components"]],
+   [["25841","Accounting"],["27012","Machine Shop Practice-I"],["27041","Engineering Mechanics"],["27241","Circuits and Electrical Machine in RAC"],["27242","Transport RAC"],["29041","Environmental Studies"],["28511","Computer Office Application"]],
+   [["25851","Principles of Marketing"],["27043","Metallurgy"],["27051","Fluid Mechanics & Machineries"],["27052","Mechanical Estimating & Costing"],["27251","Heating Ventilation & Air Conditioning (HVAC)"],["27252","Commercial & Industrial RAC"],["28567","Programming in C"]],
+   [["25852","Industrial Management"],["27055","Manufacturing Process"],["27061","Strength of Materials"],["27063","CAD & CAM"],["27065","Plant Engineering & Maintenance"],["27261","Cooling & Heating Load Calculation"],["27262","RAC Plant Installation Maintenance & Operation"]],
+   [["25853","Innovation & Entrepreneurship"],["27075","Production Planning & Control"],["27271","RAC System Analysis"],["27272","RAC Project"],["27273","Advance RAC"],["27274","RAC for Food Preservation"],["29231","Mechatronics & PLC"]],
+   [["27281","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ telecommunication:{
+  name:"Telecommunication Technology",
+  icon:"📡",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25911","Mathematics-I"],["25912","Physics-I"],["26711","Basic Electricity"],["29411","Basics of Telecommunication"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25811","Social Science"],["25812","Physical Education & Life Skills Development"],["25921","Mathematics-II"],["25922","Physics-II"],["26721","Electrical Circuits-I"],["26811","Basic Electronics"]],
+   [["25913","Chemistry"],["25931","Mathematics-III"],["28511","Computer Office Application"],["26731","Electrical Circuits-II"],["26821","Electronic Devices and Circuits"],["29431","Telecom Workshop and Outside Plant"]],
+   [["25841","Accounting"],["28567","Programming in C"],["26741","Electrical Installation, Planning and Estimating"],["26845","Digital Electronics"],["29441","Radio and TV Engineering"],["29442","IT Support and IoT Basics"],["29443","Data Communications and Networking"]],
+   [["25851","Principles of Marketing"],["25852","Industrial Management"],["26742","DC Machine"],["26751","Generation of Electrical Power"],["26752","Electrical & Electronic Measurements-I"],["26853","Microprocessor & Microcontroller"],["29451","Multimedia and Webpage Design"]],
+   [["26761","AC Machine-I"],["26763","Electrical & Electronic Measurements-II"],["26764","Transmission and Distribution of Electrical Power"],["29041","Environmental Studies"],["29462","Wireless and Mobile Communication"],["29463","Signals and Switching System"]],
+   [["25831","Business Communication"],["25853","Innovation & Entrepreneurship"],["26771","AC Machine-II"],["26773","Switch Gear and Protection"],["29471","Microwave Engineering and Antennas"],["29472","Optical Fiber Communication"],["29473","Satellite Communication and RADAR"]],
+   [["26781","Industrial Attachment & Project Presentation"]]
+  ]
+ },
+
+ mechatronics:{
+  name:"Mechatronics Technology",
+  icon:"🏭",
+  sems:[
+   [["21011","Engineering Drawing"],["25711","Bangla-I"],["25712","English-I"],["25812","Physical Education & Life Skills Development"],["25911","Mathematics-I"],["25912","Physics-I"],["26711","Basic Electricity"],["27011","Basic Workshop Practice"]],
+   [["25721","Bangla-II"],["25722","English-II"],["25921","Mathematics-II"],["25922","Physics-II"],["26811","Basic Electronics"],["27012","Machine Shop Practice-I"],["27021","Mechanical Engineering Drawing"]],
+   [["25811","Social Science"],["25831","Business Communication"],["25913","Chemistry"],["25931","Mathematics-III"],["28511","Computer Office Application"],["26821","Electronic Devices and Circuits"],["27031","Mechanical Engineering Materials"],["29232","Basic Mechatronics"]],
+   [["25841","Accounting"],["28567","Programming in C"],["27032","Machine Shop Practice-II"],["27041","Engineering Mechanics"],["27131","Engineering Thermodynamics"],["29041","Environmental Studies"],["29241","Electrical Circuits & Machine"]],
+   [["25851","Principles of Marketing"],["25852","Industrial Management"],["26845","Digital Electronics"],["27051","Fluid Mechanics & Machineries"],["27055","Manufacturing Process"],["27152","Power Plant Engineering"],["29251","Programmable Logic Controller"]],
+   [["26833","Industrial Electronics"],["27061","Strength of Materials"],["27062","Mechanical Measurement & Metrology"],["27063","CAD & CAM"],["29261","Microprocessor & Microcontroller Applications"],["29262","Instrumentation & Control System"]],
+   [["25853","Innovation & Entrepreneurship"],["27071","Design of Machine Elements"],["27075","Production Planning & Control"],["27172","Hybrid & Electric Vehicle"],["29271","Mechatronics Engineering Project"],["29272","Industrial Automation System Design"],["29273","Networks & Communications"],["29274","Robotics, Manufacture & Process Engineering"]],
+   [["27081","Industrial Attachment & Project Presentation"]]
+  ]
+ }
+
+};
+
+let techSelected=null;
+let techSemIndex=0;
+
+function showTechPage(){
+
+ document.getElementById("techChooser").style.display="block";
+ document.getElementById("techSubjectView").style.display="none";
+
+ document.getElementById("techCrumb").textContent=
+  "Diploma in Engineering / Technology Information";
+
+ renderTechGrid();
+
+ showPage("techPage");
+
+}
+
+function techGoBack(){
+
+ if(document.getElementById("techSubjectView").style.display!=="none"){
+
+  techSelected=null;
+
+  document.getElementById("techChooser").style.display="block";
+  document.getElementById("techSubjectView").style.display="none";
+
+  document.getElementById("techCrumb").textContent=
+   "Diploma in Engineering / Technology Information";
+
+  return;
+
+ }
+
+ showPage("calculatorPage");
+
+}
+
+function renderTechGrid(){
+
+ const grid=document.getElementById("techGrid");
+
+ grid.innerHTML=Object.entries(TECH_SUBJECTS).map(([key,t])=>`
+
+  <button
+   class="techcard"
+   onclick="selectTech('${key}')">
+
+   <div class="temoji">
+    ${t.icon}
+   </div>
+
+   <strong>
+    ${t.name}
+   </strong>
+
+   <small>
+    Regulation 2022 • 8 Semesters
+   </small>
+
+  </button>
+
+ `).join("");
+
+}
+
+function selectTech(key){
+
+ techSelected=key;
+ techSemIndex=0;
+
+ document.getElementById("techChooser").style.display="none";
+ document.getElementById("techSubjectView").style.display="block";
+
+ const t=TECH_SUBJECTS[key];
+
+ document.getElementById("techCrumb").textContent=
+  "Diploma in Engineering / "+t.name;
+
+ document.getElementById("techSubjTitle").textContent=
+  t.name+" — Probidhan 2022";
+
+ renderSemTabs();
+
+ renderSubjTable();
+
+}
+
+function renderSemTabs(){
+
+ const wrap=document.getElementById("semTabs");
+
+ wrap.innerHTML=Array.from(
+  {length:8},
+  (_,i)=>`
+
+   <button
+    class="semtab ${i===techSemIndex?'active':''}"
+    onclick="chooseSem(${i})">
+    ${i+1}${ordinal(i+1)} Semester
+   </button>
+
+  `
+ ).join("");
+
+}
+
+function chooseSem(i){
+
+ techSemIndex=i;
+
+ renderSemTabs();
+
+ renderSubjTable();
+
+}
+
+function renderSubjTable(){
+
+ const t=TECH_SUBJECTS[techSelected];
+
+ const subjects=t.sems[techSemIndex];
+
+ document.getElementById("subjTableBody").innerHTML=
+  subjects.map(s=>`
+
+   <tr>
+    <td class="code">${s[0]}</td>
+    <td>${s[1]}</td>
+   </tr>
+
+  `).join("");
+
+}
+
+
+/* =========================================================
+   SUBJECT CODE FINDER
+========================================================= */
+
+function escapeHTML(str){
+
+ return String(str).replace(/[&<>"']/g,c=>(
+  {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]
+ ));
+
+}
+
+let SUBJECT_INDEX=null;
+
+function buildSubjectIndex(){
+
+ const idx=[];
+
+ Object.keys(TECH_SUBJECTS).forEach(techKey=>{
+
+  const tech=TECH_SUBJECTS[techKey];
+
+  tech.sems.forEach((sem,si)=>{
+
+   sem.forEach(s=>{
+
+    idx.push({
+     code:s[0],
+     name:s[1],
+     program:"Diploma in Engineering",
+     branch:tech.name,
+     semester:si+1,
+     credit:null,
+     marks:null
+    });
+
+   });
+
+  });
+
+ });
+
+
+ const nonEng=[
+  ["Diploma in Agriculture",AGRI_SUBJECTS],
+  ["Diploma in Livestock",LIVESTOCK_SUBJECTS],
+  ["Diploma in Fisheries",FISHERIES_SUBJECTS],
+  ["Diploma in Forestry",FORESTRY_SUBJECTS],
+  ["Diploma in Marine Engineering",MARINE_SUBJECTS],
+  ["Diploma in Textile Engineering",TEXTILE_SUBJECTS]
+ ];
+
+ nonEng.forEach(([progName,arr])=>{
+
+  arr.forEach((sem,si)=>{
+
+   sem.forEach(s=>{
+
+    idx.push({
+     code:s[0],
+     name:s[1],
+     program:progName,
+     branch:null,
+     semester:si+1,
+     credit:s[2],
+     marks:s[3]
+    });
+
+   });
+
+  });
+
+ });
+
+
+ return idx;
+
+}
+
+function ensureSubjectIndex(){
+
+ if(!SUBJECT_INDEX){
+
+  SUBJECT_INDEX=buildSubjectIndex();
+
+ }
+
+}
+
+function openFinderPage(){
+
+ showPage("finderPage");
+
+ ensureSubjectIndex();
+
+ document.getElementById("finderInput").focus();
+
+}
+
+function runSubjectSearch(){
+
+ ensureSubjectIndex();
+
+ const qRaw=
+  document.getElementById("finderInput").value.trim();
+
+ const q=qRaw.toLowerCase();
+
+ const resultsEl=document.getElementById("finderResults");
+
+ const countEl=document.getElementById("finderCount");
+
+ const emptyEl=document.getElementById("finderEmpty");
+
+
+ if(!q){
+
+  resultsEl.innerHTML="";
+
+  countEl.textContent="";
+
+  emptyEl.style.display="none";
+
+  return;
+
+ }
+
+
+ const matches=SUBJECT_INDEX.filter(s=>
+
+  s.code.toLowerCase().includes(q) ||
+  s.name.toLowerCase().includes(q)
+
+ );
+
+
+ if(!matches.length){
+
+  resultsEl.innerHTML="";
+
+  countEl.textContent="";
+
+  emptyEl.style.display="block";
+
+  return;
+
+ }
+
+
+ emptyEl.style.display="none";
+
+ countEl.textContent=
+
+  matches.length>150?
+
+   "150+ Subject পাওয়া গেছে, প্রথম 150টি দেখানো হচ্ছে — আরো নির্দিষ্ট করে খুঁজুন":
+
+   matches.length+" টি Subject পাওয়া গেছে";
+
+
+ resultsEl.innerHTML=matches.slice(0,150).map(s=>`
+
+  <div class="findcard">
+
+   <span class="findcode">
+    ${escapeHTML(s.code)}
+   </span>
+
+   <div class="findname">
+    ${escapeHTML(s.name)}
+   </div>
+
+   <div class="findmeta">
+
+    <span>
+     ${escapeHTML(s.program)}${s.branch?" · "+escapeHTML(s.branch):""}
+    </span>
+
+    <span>
+     ${s.semester}${ordinal(s.semester)} Semester
+    </span>
+
+    ${s.credit!=null?`<span>${s.credit} Credit</span>`:""}
+
+    ${s.marks!=null?`<span>${s.marks} Marks</span>`:""}
+
+   </div>
+
+  </div>
+
+ `).join("");
+
+}
+
+function clearFinder(){
+
+ document.getElementById("finderInput").value="";
+
+ runSubjectSearch();
+
+ document.getElementById("finderInput").focus();
+
+}
+
+
+/* =========================================================
+   WHAT-IF GPA SIMULATOR
+========================================================= */
+
+let wiBaseline=Array(8).fill(null);
+
+let wiValues=Array(8).fill(null);
+
+let wiFocusIndex=0;
+
+function openWhatIfPage(){
+
+ showPage("whatifPage");
+
+
+ const d=selected?DATA[selected]:null;
+
+ const reg=document.getElementById("regulation").value;
+
+ const cfg=(d && reg)?d.regs[reg]:null;
+
+
+ if(!d || !cfg){
+
+  document.getElementById("wiSelectedLabel").style.display="none";
+  document.getElementById("wiNeedSelect").style.display="block";
+  document.getElementById("wiNoBlank").style.display="none";
+  document.getElementById("wiMain").style.display="none";
+
+  return;
+
+ }
+
+
+ document.getElementById("wiNeedSelect").style.display="none";
+
+ document.getElementById("wiSelectedLabel").style.display="block";
+
+
+ document.getElementById("wiSelectedLabel").textContent=
+  "নির্বাচিত: "+d.name+" · Probidhan "+reg;
+
+
+ for(let i=0;i<8;i++){
+
+  const input=document.getElementById("sem"+(i+1));
+
+  const v=input?parseFloat(input.value):NaN;
+
+  wiBaseline[i]=
+
+   (Number.isFinite(v) && v>=0 && v<=4)?
+
+    v: null;
+
+ }
+
+ wiValues=wiBaseline.map(v=>v===null?3:v);
+
+
+ const blanks=
+
+  wiBaseline
+
+   .map((v,i)=>v===null?i:null)
+
+   .filter(i=>i!==null);
+
+
+ if(!blanks.length){
+
+  document.getElementById("wiNoBlank").style.display="block";
+
+  document.getElementById("wiMain").style.display="none";
+
+  return;
+
+ }
+
+ document.getElementById("wiNoBlank").style.display="none";
+
+ document.getElementById("wiMain").style.display="block";
+
+ wiFocusIndex=blanks[0];
+
+
+ renderWhatIf();
+
+}
+
+function getWhatIfWeights(){
+
+ const d=DATA[selected];
+
+ const reg=document.getElementById("regulation").value;
+
+ const cfg=d.regs[reg];
+
+ return getWeights(cfg);
+
+}
+
+function computeWeighted(values,weights){
+
+ let sum=0;
+
+ let anyEntered=false;
+
+ for(let i=0;i<8;i++){
+
+  const v=values[i];
+
+  if(Number.isFinite(v)){
+
+   sum+=v*weights[i];
+
+   anyEntered=true;
+
+  }
+
+ }
+
+ if(!anyEntered) return null;
+
+ return Math.min(4,Math.max(0,sum/100));
+
+}
+
+function renderWhatIf(){
+
+ const blanks=
+
+  wiBaseline
+
+   .map((v,i)=>v===null?i:null)
+
+   .filter(i=>i!==null);
+
+
+ const semSel=document.getElementById("wiSemesterSelect");
+
+ semSel.innerHTML=blanks.map(i=>
+
+  `<option value="${i}" ${i===wiFocusIndex?"selected":""}>
+    ${i+1}${ordinal(i+1)} Semester
+   </option>`
+
+ ).join("");
+
+ semSel.onchange=()=>{
+
+  wiFocusIndex=parseInt(semSel.value);
+
+  syncFocusControl();
+
+  renderWhatIfBlocks();
+
+  updateWhatIfResult();
+
+ };
+
+
+ syncFocusControl();
+
+ renderWhatIfBlocks();
+
+ updateWhatIfResult();
+
+}
+
+function syncFocusControl(){
+
+ const val=
+
+  Number.isFinite(wiValues[wiFocusIndex])?
+
+   wiValues[wiFocusIndex]:3;
+
+ document.getElementById("wiFocusRange").value=val;
+
+ document.getElementById("wiFocusVal").textContent=
+  val.toFixed(2);
+
+}
+
+function renderWhatIfBlocks(){
+
+ const grid=document.getElementById("wiSemGrid");
+
+ grid.innerHTML=Array.from({length:8},(_,i)=>{
+
+  const isBase=wiBaseline[i]!==null;
+
+
+  if(isBase){
+
+   return `
+
+    <div class="sem wi-fixed">
+
+     <div class="semhead">
+      <span>${i+1}${ordinal(i+1)} Semester</span>
+      <span class="weight">বর্তমান</span>
+     </div>
+
+     <div class="wi-fixedval">
+      ${wiBaseline[i].toFixed(2)}
+     </div>
+
+    </div>
+
+   `;
+
+  }
+
+
+  const val=
+
+   Number.isFinite(wiValues[i])?
+
+    wiValues[i]:3;
+
+
+  return `
+
+   <div class="sem ${i===wiFocusIndex?'wi-focus':''}">
+
+    <div class="semhead">
+     <span>${i+1}${ordinal(i+1)} Semester</span>
+     <span class="weight" id="wiVal${i}">${val.toFixed(2)}</span>
+    </div>
+
+    <input
+     class="wirange"
+     type="range"
+     min="0"
+     max="4"
+     step="0.01"
+     value="${val}"
+     id="wiGridRange${i}"
+     oninput="wiSetValue(${i},this.value)">
+
+   </div>
+
+  `;
+
+ }).join("");
+
+}
+
+function wiSetValue(i,v){
+
+ const num=parseFloat(v);
+
+ wiValues[i]=
+
+  Number.isFinite(num)?
+
+   Math.min(4,Math.max(0,num)):3;
+
+
+ const label=document.getElementById("wiVal"+i);
+
+ if(label){
+
+  label.textContent=wiValues[i].toFixed(2);
+
+ }
+
+
+ const gridRange=document.getElementById("wiGridRange"+i);
+
+ if(gridRange && parseFloat(gridRange.value)!==wiValues[i]){
+
+  gridRange.value=wiValues[i];
+
+ }
+
+
+ if(i===wiFocusIndex){
+
+  syncFocusControl();
+
+ }
+
+
+ updateWhatIfResult();
+
+}
+
+function updateWhatIfResult(){
+
+ const weights=getWhatIfWeights();
+
+
+ const current=computeWeighted(wiBaseline,weights);
+
+
+ const merged=
+
+  wiBaseline.map((v,i)=>v!==null?v:wiValues[i]);
+
+ const projected=computeWeighted(merged,weights);
+
+
+ document.getElementById("wiCurrent").textContent=
+
+  current!==null?current.toFixed(2):"—";
+
+ document.getElementById("wiProjected").textContent=
+
+  projected!==null?projected.toFixed(2):"—";
+
+
+ const statusEl=document.getElementById("wiStatus");
+
+ if(current!==null && projected!==null){
+
+  const diff=projected-current;
+
+  if(Math.abs(diff)<0.005){
+
+   statusEl.textContent="↔ CGPA প্রায় অপরিবর্তিত থাকবে";
+
+  }
+
+  else if(diff>0){
+
+   statusEl.textContent="📈 CGPA বাড়বে +"+diff.toFixed(2);
+
+  }
+
+  else{
+
+   statusEl.textContent="📉 CGPA কমবে "+diff.toFixed(2);
+
+  }
+
+ }
+
+ else{
+
+  statusEl.textContent=
+
+   "প্রথম projection দেখতে অন্তত একটি what-if GPA দিন";
+
+ }
+
+
+ const fillPct=
+
+  projected!==null?
+
+   Math.min(100,Math.max(0,(projected/4)*100)):0;
+
+ document.getElementById("wiGaugeFill").style.width=
+  fillPct+"%";
+
+
+ renderWiComparison(weights);
+
+}
+
+function renderWiComparison(weights){
+
+ const presets=[3.00,3.25,3.50,3.75,4.00];
+
+ const tbody=document.getElementById("wiCompareBody");
+
+ tbody.innerHTML=presets.map(g=>{
+
+  const merged=wiBaseline.map((v,i)=>
+
+   i===wiFocusIndex?g:(v!==null?v:wiValues[i])
+
+  );
+
+  const proj=computeWeighted(merged,weights);
+
+  return `
+
+   <tr>
+    <td>${g.toFixed(2)}</td>
+    <td>${proj!==null?proj.toFixed(2):"—"}</td>
+   </tr>
+
+  `;
+
+ }).join("");
+
+}
+
+function wiStorageKey(){
+
+ return "diplomaCgpaWhatIf_"+selected+"_"+
+  document.getElementById("regulation").value;
+
+}
+
+function wiSaveLocal(){
+
+ try{
+
+  localStorage.setItem(
+
+   wiStorageKey(),
+
+   JSON.stringify({values:wiValues})
+
+  );
+
+  toast("Local-এ সেভ হয়েছে ✅");
+
+ }
+
+ catch(e){
+
+  toast("Save করা যায়নি");
+
+ }
+
+}
+
+function wiLoadLocal(){
+
+ try{
+
+  const raw=localStorage.getItem(wiStorageKey());
+
+  if(!raw){
+
+   toast("কোনো saved data পাওয়া যায়নি");
+
+   return;
+
+  }
+
+  const obj=JSON.parse(raw);
+
+  wiValues=obj.values;
+
+  syncFocusControl();
+
+  renderWhatIfBlocks();
+
+  updateWhatIfResult();
+
+  toast("Saved data load হয়েছে");
+
+ }
+
+ catch(e){
+
+  toast("Load করা যায়নি");
+
+ }
+
+}
+
+function wiClearLocal(){
+
+ localStorage.removeItem(wiStorageKey());
+
+ toast("Saved data মুছে ফেলা হয়েছে");
+
+}
+
+
+/* =========================================================
+   PWA — SERVICE WORKER + INSTALL PROMPT
+========================================================= */
+
+if("serviceWorker" in navigator){
+
+ window.addEventListener("load",()=>{
+
+  navigator.serviceWorker
+   .register("/service-worker.js")
+   .catch(()=>{});
+
+ });
+
+}
+
+let deferredInstallPrompt=null;
+
+window.addEventListener("beforeinstallprompt",(e)=>{
+
+ e.preventDefault();
+
+ deferredInstallPrompt=e;
+
+ const btn=document.getElementById("installBtn");
+
+ if(btn) btn.style.display="inline-block";
+
+});
+
+function triggerInstall(){
+
+ if(!deferredInstallPrompt) return;
+
+ deferredInstallPrompt.prompt();
+
+ deferredInstallPrompt.userChoice.finally(()=>{
+
+  deferredInstallPrompt=null;
+
+  const btn=document.getElementById("installBtn");
+
+  if(btn) btn.style.display="none";
+
+ });
+
+}
+
+window.addEventListener("appinstalled",()=>{
+
+ const btn=document.getElementById("installBtn");
+
+ if(btn) btn.style.display="none";
+
+ toast("App install হয়েছে ✅");
+
+});
+
+
+function wrapSubjectTables(){
+
+ document.querySelectorAll("table.subjtable").forEach(t=>{
+
+  if(t.parentElement.classList.contains("subjtable-wrap")) return;
+
+  const wrap=document.createElement("div");
+
+  wrap.className="subjtable-wrap";
+
+  t.parentNode.insertBefore(wrap,t);
+
+  wrap.appendChild(t);
+
+ });
+
+}
+
+
+/* =========================================================
+   EXAM COUNTDOWN
+========================================================= */
+
+function renderCountdown(){
+
+ const box=document.getElementById("countdownBox");
+
+ const saved=localStorage.getItem("btebExamDate");
+
+
+ if(!saved){
+
+  box.innerHTML=`
+
+   <div class="cdleft">
+    <div class="cdlabel">📅</div>
+    <div class="cdtext">
+     <b>আপনার পরের পরীক্ষার তারিখ সেট করুন</b>
+     <span class="cdlabel">দিন গোনা শুরু হবে এখান থেকেই</span>
+    </div>
+   </div>
+
+   <div class="cdsetup">
+    <input type="date" id="cdInput">
+    <button class="primary" onclick="saveExamDate()">Set Date</button>
+   </div>
+
+  `;
+
+  return;
+
+ }
+
+
+ const examDate=new Date(saved+"T00:00:00");
+
+ const today=new Date();
+
+ today.setHours(0,0,0,0);
+
+ const diffDays=Math.round(
+  (examDate-today)/(1000*60*60*24)
+ );
+
+
+ let cdNumHTML;
+
+ let cdTextHTML;
+
+ if(diffDays>0){
+
+  cdNumHTML=diffDays;
+
+  cdTextHTML=`<b>পরীক্ষার আর ${diffDays} দিন বাকি</b><span class="cdlabel">${saved}</span>`;
+
+ }
+
+ else if(diffDays===0){
+
+  cdNumHTML="🎯";
+
+  cdTextHTML=`<b>আজই পরীক্ষা — শুভকামনা!</b><span class="cdlabel">${saved}</span>`;
+
+ }
+
+ else{
+
+  cdNumHTML="✅";
+
+  cdTextHTML=`<b>পরীক্ষার তারিখ পার হয়ে গেছে</b><span class="cdlabel">${saved}</span>`;
+
+ }
+
+
+ box.innerHTML=`
+
+  <div class="cdleft">
+   <div class="cdnum">${cdNumHTML}</div>
+   <div class="cdtext">${cdTextHTML}</div>
+  </div>
+
+  <div class="cdsetup">
+   <button class="secondary" onclick="clearExamDate()">তারিখ বদলান</button>
+  </div>
+
+ `;
+
+}
+
+function saveExamDate(){
+
+ const v=document.getElementById("cdInput").value;
+
+ if(!v){
+
+  toast("তারিখ নির্বাচন করুন");
+
+  return;
+
+ }
+
+ localStorage.setItem("btebExamDate",v);
+
+ renderCountdown();
+
+ toast("তারিখ সেভ হয়েছে");
+
+}
+
+function clearExamDate(){
+
+ localStorage.removeItem("btebExamDate");
+
+ renderCountdown();
+
+}
+
+
+/* =========================================================
+   COPY / SHARE RESULT
+========================================================= */
+
+function buildResultText(){
+
+ if(!selected || !hasCalculatedOnce) return null;
+
+ const d=DATA[selected];
+
+ const reg=document.getElementById("regulation").value;
+
+ const scoreEl=document.getElementById("score");
+
+ const doneEl=document.getElementById("done");
+
+ const avgEl=document.getElementById("avg");
+
+ const bestEl=document.getElementById("best");
+
+
+ return (
+  "BTEB Diploma CGPA Result\n"+
+  "Diploma: "+d.name+"\n"+
+  "Regulation: "+reg+"\n"+
+  "Completed Semester: "+doneEl.textContent.trim()+"\n"+
+  "CGPA: "+scoreEl.textContent.trim()+"\n"+
+  "Average GPA: "+avgEl.textContent.trim()+"\n"+
+  "Best GPA: "+bestEl.textContent.trim()+"\n\n"+
+  "Calculate yours: https://btebdiplomacgpa.netlify.app/"
+ );
+
+}
+
+function copyResult(){
+
+ const text=buildResultText();
+
+ if(!text){
+
+  toast("আগে CGPA calculate করুন");
+
+  return;
+
+ }
+
+
+ if(navigator.clipboard && navigator.clipboard.writeText){
+
+  navigator.clipboard.writeText(text)
+   .then(()=>toast("Result copied successfully."))
+   .catch(()=>fallbackCopy(text));
+
+ }
+
+ else{
+
+  fallbackCopy(text);
+
+ }
+
+}
+
+function fallbackCopy(text){
+
+ try{
+
+  const ta=document.createElement("textarea");
+
+  ta.value=text;
+
+  ta.style.position="fixed";
+
+  ta.style.opacity="0";
+
+  document.body.appendChild(ta);
+
+  ta.select();
+
+  document.execCommand("copy");
+
+  document.body.removeChild(ta);
+
+  toast("Result copied successfully.");
+
+ }
+
+ catch(e){
+
+  toast("Copy করা যায়নি, ম্যানুয়ালি copy করুন");
+
+ }
+
+}
+
+function shareResult(){
+
+ const text=buildResultText();
+
+ if(!text){
+
+  toast("আগে CGPA calculate করুন");
+
+  return;
+
+ }
+
+
+ if(navigator.share){
+
+  navigator.share({
+   title:"BTEB Diploma CGPA Result",
+   text:text
+  }).catch(err=>{
+
+   if(err && err.name==="AbortError") return;
+
+   copyResult();
+
+  });
+
+ }
+
+ else{
+
+  copyResult();
+
+ }
+
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+function openFeedback(){
+
+ document.getElementById("feedbackOverlay").style.display="flex";
+
+}
+
+function closeFeedback(){
+
+ document.getElementById("feedbackOverlay").style.display="none";
+
+}
+
+function submitFeedback(e){
+
+ e.preventDefault();
+
+ const form=document.getElementById("feedbackForm");
+
+ const data=new FormData(form);
+
+ const encoded=new URLSearchParams(data).toString();
+
+
+ fetch("/",{
+  method:"POST",
+  headers:{"Content-Type":"application/x-www-form-urlencoded"},
+  body:encoded
+ })
+  .then(()=>{
+
+   toast("Feedback পাঠানো হয়েছে, ধন্যবাদ! ✅");
+
+   form.reset();
+
+   closeFeedback();
+
+  })
+  .catch(()=>{
+
+   toast("পাঠানো যায়নি, একটু পরে আবার চেষ্টা করুন");
+
+  });
+
+ return false;
+
+}
+
+
+/* =========================================================
+   SSC VOCATIONAL GPA CALCULATOR
+   Source: BTEB Vocational grading system, 5.00-point scale
+========================================================= */
+
+const VOC_COMPULSORY=[
+ "Bangla 2nd Paper",
+ "English 2nd Paper",
+ "Physics 2nd Paper",
+ "Chemistry 2nd Paper",
+ "Mathematics 2nd Paper",
+ "ICT 2nd Paper",
+ "Social Science / Religion 2nd Paper"
+];
+
+const VOC_TRADES=[
+ ["Computer & IT",["Computer and Information Technology","IT Support & IoT Basics"]],
+ ["Electrical & Electronics",["General Electrical Works","General Electronics"]],
+ ["Construction",["Civil Construction and Safety","Plumbing and Pipe Fitting"]],
+ ["Mechanical",["General Mechanics","Automotive"]],
+ ["Mechanical (RAC)",["General Mechanics","Refrigeration and Air-Conditioning (RAC)"]],
+ ["Garments",["Dress Making","Tailoring"]],
+ ["Agriculture",["Fish Culture and Breeding","Poultry Rearing and Farming"]],
+ ["Wood Working",["Wood Working — Paper 1","Wood Working — Paper 2"]],
+ ["Welding and Fabrication",["Welding and Fabrication — Paper 1","Welding and Fabrication — Paper 2"]],
+ ["Patient Care Technique",["Patient Care Technique — Paper 1","Patient Care Technique — Paper 2"]]
+];
+
+function renderVocTradeDropdown(){
+
+ const sel=document.getElementById("vocTradeName");
+
+ sel.innerHTML=
+
+  `<option value="">-- ট্রেড বাছাই করুন --</option>`+
+
+  VOC_TRADES.map(([name])=>
+
+   `<option value="${escapeHTML(name)}">${escapeHTML(name)}</option>`
+
+  ).join("");
+
+}
+
+function updateVocTradeLabels(){
+
+ const val=document.getElementById("vocTradeName").value;
+
+ const trade=VOC_TRADES.find(t=>t[0]===val);
+
+ const l1=document.getElementById("vocTrade1Label");
+
+ const l2=document.getElementById("vocTrade2Label");
+
+ if(trade){
+
+  l1.textContent=trade[1][0]+" — মার্কস";
+
+  l2.textContent=trade[1][1]+" — মার্কস";
+
+ }
+
+ else{
+
+  l1.textContent="Trade Paper 1 — মার্কস";
+
+  l2.textContent="Trade Paper 2 — মার্কস";
+
+ }
+
+}
+
+function markToVocGP(mark){
+
+ if(!Number.isFinite(mark) || mark<0 || mark>100) return null;
+
+ if(mark>=80) return {gp:5.00,grade:"A+"};
+ if(mark>=75) return {gp:4.75,grade:"A"};
+ if(mark>=70) return {gp:4.50,grade:"A-"};
+ if(mark>=65) return {gp:4.25,grade:"B+"};
+ if(mark>=60) return {gp:4.00,grade:"B"};
+ if(mark>=55) return {gp:3.75,grade:"B-"};
+ if(mark>=50) return {gp:3.50,grade:"C+"};
+ if(mark>=45) return {gp:3.25,grade:"C"};
+ if(mark>=40) return {gp:3.00,grade:"D"};
+
+ return {gp:0.00,grade:"F"};
+
+}
+
+function renderVocCompulsoryGrid(){
+
+ const grid=document.getElementById("vocCompulsoryGrid");
+
+ grid.innerHTML=VOC_COMPULSORY.map((name,i)=>`
+
+  <div class="vocfield">
+   <label>${escapeHTML(name)}</label>
+   <input
+    id="vocComp${i}"
+    type="number"
+    min="0"
+    max="100"
+    placeholder="0-100"
+    oninput="calcVocGpa()">
+   <div class="vocgp" id="vocComp${i}gp"></div>
+  </div>
+
+ `).join("");
+
+}
+
+function calcVocGpa(){
+
+ let allMarks=[];
+
+ let anyFilled=false;
+
+ let anyFail=false;
+
+
+ VOC_COMPULSORY.forEach((name,i)=>{
+
+  const el=document.getElementById("vocComp"+i);
+
+  const gpEl=document.getElementById("vocComp"+i+"gp");
+
+  const v=parseFloat(el.value);
+
+  if(el.value===""){
+
+   gpEl.textContent="";
+
+   return;
+
+  }
+
+  anyFilled=true;
+
+  const res=markToVocGP(v);
+
+  if(!res){
+
+   gpEl.textContent="⚠️ 0-100-এর মধ্যে দিন";
+
+   return;
+
+  }
+
+  gpEl.textContent=res.grade+" · GP "+res.gp.toFixed(2);
+
+  if(v<40) anyFail=true;
+
+  allMarks.push(res.gp);
+
+ });
+
+
+ [["vocTrade1","vocTrade1gp"],["vocTrade2","vocTrade2gp"],["vocOptional","vocOptionalgp"]]
+  .forEach(([inputId,gpId])=>{
+
+   const el=document.getElementById(inputId);
+
+   const gpEl=document.getElementById(gpId);
+
+   const v=parseFloat(el.value);
+
+   if(el.value===""){
+
+    gpEl.textContent="";
+
+    return;
+
+   }
+
+   anyFilled=true;
+
+   const res=markToVocGP(v);
+
+   if(!res){
+
+    gpEl.textContent="⚠️ 0-100-এর মধ্যে দিন";
+
+    return;
+
+   }
+
+   gpEl.textContent=res.grade+" · GP "+res.gp.toFixed(2);
+
+   if(v<40) anyFail=true;
+
+   allMarks.push(res.gp);
+
+  });
+
+
+ const scoreEl=document.getElementById("vocScore");
+
+ const statusEl=document.getElementById("vocStatus");
+
+
+ if(!anyFilled){
+
+  scoreEl.textContent="0.00";
+
+  statusEl.textContent="—";
+
+  return;
+
+ }
+
+
+ if(anyFail){
+
+  scoreEl.textContent="0.00";
+
+  statusEl.textContent="⚠️ কোনো একটা subject-এ F grade (40-এর কম) — GPA স্বয়ংক্রিয়ভাবে 0.00";
+
+  return;
+
+ }
+
+
+ const gpa=
+
+  allMarks.reduce((a,b)=>a+b,0)/allMarks.length;
+
+
+ scoreEl.textContent=gpa.toFixed(2);
+
+ statusEl.textContent=
+
+  allMarks.length<10?
+
+   `এখন পর্যন্ত ${allMarks.length}/10 subject দেওয়া হয়েছে — সবগুলো দিলে চূড়ান্ত GPA পাবেন`:
+
+   "✅ সবগুলো subject দেওয়া হয়েছে — এটাই আপনার চূড়ান্ত GPA";
+
+}
+
+
+/* =========================================================
+   RESULT SEARCH
+   ---------------------------------------------------------
+   IMPORTANT: set RESULT_API_BASE below to your deployed
+   backend's URL (e.g. "https://result.yourdomain.com") ONLY
+   after:
+     1. the backend is actually deployed (see its README —
+        VPS + Docker + Caddy for HTTPS), and
+     2. real BTEB result PDFs have been imported via the
+        admin upload endpoint (NOT the generate_sample_data.py
+        fake data).
+   Until then this stays empty and the site shows a
+   "coming soon" message instead of a broken/fake search.
+========================================================= */
+
+const RESULT_API_BASE = ""; // Same-origin: frontend and /api/result are served by FastAPI
+
+function initResultSearchUI(){
+
+ const comingSoon=document.getElementById("rsComingSoon");
+ const searchArea=document.getElementById("rsSearchArea");
+
+ if(true){
+
+  comingSoon.style.display="none";
+  searchArea.style.display="block";
+
+ }
+ else{
+
+  comingSoon.style.display="block";
+  searchArea.style.display="none";
+
+ }
+
+}
+
+async function searchResult(){
+
+ // Same-origin API is always available when served by the backend.
+
+ const probidhan=document.getElementById("rsProbidhan").value;
+ const roll=document.getElementById("rsRoll").value.trim();
+
+ const msgEl=document.getElementById("rsMessage");
+ const resultEl=document.getElementById("rsResult");
+
+ msgEl.style.display="none";
+ resultEl.style.display="none";
+
+ if(!roll){
+
+  msgEl.textContent="Roll Number দিন";
+  msgEl.style.display="block";
+  return;
+
+ }
+
+ try{
+
+  const res=await fetch(
+   (RESULT_API_BASE||"")+"/api/result?probidhan="+
+   encodeURIComponent(probidhan)+"&roll="+
+   encodeURIComponent(roll)
+  );
+
+  const data=await res.json();
+
+  if(!res.ok || !data.found){
+
+   msgEl.textContent="কোনো Result পাওয়া যায়নি। Roll ও Probidhan যাচাই করুন।";
+   msgEl.style.display="block";
+   return;
+
+  }
+
+  const gpaRows=Object.entries(data.semester_gpa||{})
+   .map(([sem,gpa])=>
+
+    `<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line)">
+      <span>${sem}${ordinal(parseInt(sem))} Semester</span>
+      <b>${gpa!=null?gpa.toFixed(2):"—"}</b>
+     </div>`
+
+   ).join("");
+
+  resultEl.innerHTML=
+
+   `<div style="font-weight:800;margin-bottom:10px">Roll: ${escapeHTML(roll)} · Probidhan ${escapeHTML(probidhan)}</div>`+
+   gpaRows;
+
+  resultEl.style.display="block";
+
+ }
+ catch(e){
+
+  msgEl.textContent="Result আনতে সমস্যা হয়েছে, একটু পরে চেষ্টা করুন।";
+  msgEl.style.display="block";
+
+ }
+
+}
+
+
+/* =========================================================
+   INITIAL BOOT
+========================================================= */
+
+renderDiplomas();
+
+renderVocCompulsoryGrid();
+
+renderVocTradeDropdown();
+
+wrapSubjectTables();
+
+initResultSearchUI();
+
+renderCountdown();
+
+
+const startKey=
+ location.hash.replace("#","");
+
+
+if(startKey==="privacy"){
+
+ showPage("privacyPage");
+
+}
+
+else if(startKey && DATA[startKey]){
+
+ selectDiploma(
+  startKey,
+  true
+ );
+
+}
+
+else{
+
+ showPage("homePage");
+
+}
+
+</script>
+
+</body>
+</html>
